@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>SAÉ : Conception d’une base de données pour un site de e-commerce fictif</title>
+        <meta name="description" content="Conception d’une base de données pour un site de e-commerce fictif">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, portfolio en informatique, iut vélizy, but informatique, portfolio vélizy, sql">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <script src="../../../mediasglobal/redirection/versSiteSiIframeIllegal.js"></script>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Conception d'une BD</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>Jivexport</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="site_vente/morceau_mcd.webp" alt="Morceau du MCD">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>28/11/2022</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>08/01/2023</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langage</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>V</span> Oracle SQL</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                            <p>Florent VASSEUR--BERLIOUX</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="site_vente/SAE_SQL_MCD-MODIFIER_FARANDJIS_VASSEUR.zip" target="_blank">Télécharger le projet</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+
+                        <p>
+                            L'objectif était de créer une base de données pour un site d'e-commerce fictif.<br>
+                            Nous avons choisi le thème d'une boutique en ligne de jeux vidéo.<br>
+                            Cette plateforme proposerait la vente de jeux, consoles et accessoires neufs comment d'occasions.<br>
+                            Mais également un espace commentaire pour ses utilisateurs.<br>
+                            <br>
+                            Nous avons rendu cette SAÉ en 3 parties :
+                        </p>
+                        <ol>
+                            <li><p>Conception du Modèle Conceptuel de Données (MCD)</p></li>
+                            <li><p>Création du code SQL</p></li>
+                            <li><p>Ajout des droits sur la base de données</p></li>
+                        </ol>
+                        <p>
+                            Pour la 3ᵉ partie, ce qui intéressait surtout notre professeur, était de voir l'application de nos connaissances.<br>
+                            Il ne nous demandait pas de faire la totalité des droits, mais l'essentiel.<br>
+                            D'autant plus que nous étions limités à cause des protections mise en place par l'IUT sur le serveur de l'établissement.<br>
+                            <br>
+                            <br>
+                            Nous avons imaginé le nom de l'entreprise : Jivexport.<br>
+                            L'acronyme de Jeux Vidéo étant "JV", on a repris sa prononciation "jivé".<br>
+                            Vu que la plateforme s'occupe de la vente, on a pris aussi le mot "Export".<br>
+                            Et nous avons fusionné les deux... Et voici Jivexport !<br>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Modèle Conceptuel des Données</h1>
+                        <p>
+                            Le MCD est un schéma permettant de voir les différents liens entre les différentes tables.<br>
+                            Ce schéma permet en plus de connaître la composition des tables.<br>
+                            <br>
+                            Pour faire le MCD, nous avons utilisé le site Excalidraw.
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Création du code SQL</h1>
+                        <p>
+                            En plus de créer les différentes tables, nous avons dû y mettre des contraintes.<br>
+                            Par exemple, le format d'une adresse email ou celui d'un numéro de téléphone.<br>
+                            Pour les notes des objets d'occasion, elles doivent être entre 1 et 10.<br>
+                            <br>
+                            En parallèle de la SAÉ, nous continuons les cours de base de données.<br>
+                            Il nous parlait souvent des erreurs à éviter de faire.<br>
+                            <br>
+                            Par exemple, nous pensions qu'une table utilisateur, qui contient l'identifiant de celui-ci
+                            doit également contenir son mot de passe.<br>
+                            Erreur !<br>
+                            On ne doit jamais mettre de mot de passe dans les tables, encore moins s'ils sont cryptés.<br>
+                            En cas de piratage ou d'accès par des employés malveillant, cela peut avoir des conséquences dévastatrices.<br>
+                            Le mot de passe doit être géré par les droits du serveur Oracle, en créant des utilisateurs.<br>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Ajout des droits</h1>
+                        <p>
+                            Si ce qu'on a fait juste avant n'était pas très nouveau pour moi, cette SAÉ m'a plongé dans quelque chose de nouveau.<br>
+                            L'an dernier, j'ai découvert les précédentes notions avec SQLite, un langage SQL mono-utilisateur.<br>
+                            La gestion d'utilisateur n'existait donc pas !<br>
+                            <br>
+                            Je n'ai pas grand-chose à dire là-dessus.<br>
+                            Nous avons créé des vues sur les tables et associé des permissions à différents comptes publiques de l'établissement.<br>
+                            <br>
+                            Si je devais imager les vues, ça serait comme si une table serait une feuille de journal, et qu'une vue serait un morceau de carton.<br>
+                            Ce morceau de carton fait la taille de la feuille.<br>
+                            Vous superposez le carton sur la feuille et vous y faites des trous de manière a que seul une partie du journal soit visible.<br>
+                            Vous associez ensuite ce carton à quelqu'un, et le seul moyen qu'il lise le journal, c'est en passant par le morceau de carton.<br>
+                            Ainsi, vous pouvez limiter l'accès aux tables en fonctions des utilisateurs.<br>
+
+
+                        </p>
+                    </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : Windoze</title>
+        <meta name="description" content="Recréation d'un jeu MS-DOS de 1994 inspiré de Columns de SEGA, mais en Python ! Jeu du même genre que Tetris ou PuyoPuyo plus ou moins.">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, projet python informatique, nsi sartrouville, nsi evariste galois, lycée évariste galois, projet nsi, tetris">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Windoze</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>Windoze</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="windoze/miniature.webp" alt="Miniature du projet Windoze">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>30/06/2022</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>10/08/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langages</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Linkieu/Windoze" target="_blank">Voir la page GitHub</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+
+                        <p>
+                            "Windoze" est un jeu MS-DOS créé par Loren Blaney en 1994.<br>
+                            Ce jeu est fondé sur "Columns" créer par Jay Geertsen en 1989 et commercialisé par SEGA.<br>
+                            Il reprend la même mécanique de jeu, mais il a comme thème Microsoft Windows 3.1.<br>
+                            <br>
+                            J'ai découvert le jeu par le biais du compte twitter de <a target="_blank" href="https://twitter.com/Foone">foone</a>, il me semble.<br>
+                            Le jeu m'a intéressé, et au lieu de lancer une machine virtuelle pour l'installer, j'ai décidé de le recréer en Python.<br>
+                            Après tout, j'avais déjà refait Tetris en NSI, alors pourquoi pas tenter aussi Columns !<br>
+                        </p>
+
+                    </div>
+
+
+                    <div class="encartArticle">
+                        <h1>Mode d'emploi</h1>
+
+                        <p>
+                            <b>Règles</b><br>
+                            Le but est de réarranger et de placer les pièces de manière à faire apparaître des lignes verticales,
+                            horizontales ou diagonales de 3 blocs (ou plus) de même couleur,
+                            ce qui a pour effet de faire disparaître ces blocs.<br>
+                            <br>
+
+                            <i>Source (Wikipédia: Columns): </i><a class="boutonPlusDInfo" target="_blank" href="https://fr.wikipedia.org/wiki/Columns_(jeu_vid%C3%A9o)">https://fr.wikipedia.org/wiki/Columns_(jeu_vidéo)</a><br>
+                            <br>
+                            <br>
+                            <b>Touches</b>
+                        </p>
+                            <ul>
+                                <li><p><u>Gauche :</u> ←</p></li>
+                                <li><p><u>Droite :</u> →</p></li>
+                                <li><p><u>Bas :</u> ↓</p></li>
+                                <li><p><u>Rotation :</u> Espace</p></li>
+                                <li><p><u>Lâcher :</u> ↑</p></li>
+                                <li><p><u>Pause :</u> P</p></li>
+                                <li><p><u>Sauvegarder :</u> S</p></li>
+                                <li><p><u>Quitter :</u> Echap</p></li>
+                            </ul>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleLancer">
+                        <h1>Lancer le projet</h1>
+
+                        <p>
+                            <b>Modules utilisés :</b>
+                        </p>
+                        <ul>
+                            <li><p>Pygame</p></li>
+                            <li><p>Random</p></li>
+                            <li><p>Time</p></li>
+                            <li><p>Json</p></li>
+                        </ul>
+                        <p>
+                            <b>Pour lancer le projet</b>, importez puis exécutez le fichier <b>Windoze.py</b>.<br>
+                            <br>
+                            Le projet a été créé avec l'IDE Spyder (Ananconda).<br>
+                            Si vous n'avez pas de programme pour lancer le projet Python, vous pouvez installer l'IDE <a class="boutonPlusDInfo" href="https://edupython.tuxfamily.org/documentation-sauvegarde/index0ea0.html?title=Installation_et_Configuration" target="_blank">EduPython</a>.<br>
+                            Je recommande EduPython si vous souhaitez tester le projet sans vous embêter avec l'installation des modules ou de Python.<br>
+                            <br>
+                            <br>
+                            <b>Sur EduPython:</b><br>
+                            <i>Importer :</i> Fichier > Ouvrir > jeu_eleves.py<br>
+                            <i>Lancer le jeu :</i> Exécuter > Exécuter (Ctrl + F9)<br>
+                            <i>Arrêter le jeu :</i> Exécuter > Stopper le debuggage (Ctrl + Alt + F9)<br>
+                            <br>
+                            Les modules sont déjà présents au sein d'EduPython.<br>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Sources</h1>
+
+                        <p>
+                            Vidéo sur le projet original : <a class="boutonPlusDInfo" target="_blank" href="https://www.youtube.com/watch?v=oT92MVBPMAY">https://www.youtube.com/watch?v=oT92MVBPMAY</a><br>
+                            Site officiel du créateur d'origine : <a class="boutonPlusDInfo" target="_blank" href="http://www.xpl0.org/">http://www.xpl0.org/</a><br>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <a href="windoze/vide.webp" target="_blank"><img src="windoze/vide.webp" alt="Une début de partie"></a>
+                            <a href="windoze/graviter.webp" target="_blank"><img src="windoze/graviter.webp" alt="Les blocs sont soumis à la gravité"></a>
+                            <a href="windoze/leJeu.webp" target="_blank"><img src="windoze/leJeu.webp" alt="Une partie de jeu"></a>
+                            <a href="windoze/sauvegarde.webp" target="_blank"><img src="windoze/sauvegarde.webp" alt="Game Over, entré dans le tableau des score, demande d'un pseudonyme"></a>
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

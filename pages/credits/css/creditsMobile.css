@@ -1,0 +1,49 @@
+
+@media only screen and (max-width: 800px){
+
+    .milieuEtVertical > h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    #blocPolices {
+        margin-bottom: 40px;
+    }
+
+    #blocIcones {
+        margin-bottom: 40px;
+    }
+
+    #blocIcones > p{
+        margin-bottom: -17px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #blocPolices > .unePolice{
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 30px;
+        right:10px;
+        }
+
+            .unePolice > h2{
+                font-weight: bold;
+                font-size: 22px;
+
+                position: relative;
+                right: 35px;
+
+
+                margin-bottom: -15px;
+            }
+
+            .unePolice > p{
+                margin-bottom: -17px;
+            }
+
+
+}

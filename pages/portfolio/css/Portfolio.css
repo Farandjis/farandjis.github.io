@@ -1,0 +1,225 @@
+@media only screen and (min-width: 500px) {
+    .rectangle {
+        width: 400px;
+        height: 40px;
+        background-color: #efefef;
+    }
+
+    .triangle {
+        border-style: solid;
+        border-color: transparent transparent #B66E2D transparent; /* transparence */
+        border-width: 0 25px 30px 0;
+        background: none; /* suppression de l'arrière plan */
+        width: 180px;
+        height: 20px;
+
+        position: relative;
+        bottom: 89px;
+        margin-bottom: -51px;
+    }
+
+    /* source formes: https://www.zonecss.fr/laboratoire-css/les-formes-geometriques.html*/
+    #blocDeProjets {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 1500px;
+
+    }
+
+    .unProjet {
+        border: 5px #efefef solid;
+        width: 400px;
+        box-shadow: 0 0 20px 5px black;
+
+
+        margin: 30px 30px 30px 30px;
+    }
+
+    #conteneurBloc {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .unProjet > a > img {
+        width: 392px;
+        height: 220px;
+        margin-bottom: -5px;
+        border: 4px #B66E2D solid;
+    }
+
+    .unProjet > a:not(hover) h2 {
+        position: relative;
+        bottom: 60px;
+        left: 10px;
+        margin-bottom: -57px;
+
+        width: 383px;
+
+        font-family: 'police_thenextfont', serif;
+        font-size: 28px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-decoration: none;
+
+    }
+
+    .unProjet > a > p {
+        position: relative;
+        bottom: 85px;
+        left: 5px;
+        margin-bottom: -44px;
+
+        color: white;
+
+        background-color: #B66E2D;
+        width: 175px;
+        height: 25px;
+
+        font-size: 20px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    a:hover .rectangle {
+        background: #B66E2D;
+    }
+
+    a:hover h2 {
+        color: white;
+    }
+
+    a:hover .triangle {
+        border-color: transparent transparent #7E4D21 transparent; /* transparence */
+    }
+
+    a:hover img {
+        border: 4px #7E4D21 solid;
+    }
+
+    a:hover p{
+        background-color: #7E4D21;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .rectangle {
+        width: 260px;
+        height: 60px;
+        background: #efefef;
+
+    }
+
+    .triangle {
+        border-style: solid;
+        border-color: transparent transparent #dc0000 transparent; /* transparence */
+        border-width: 0 25px 30px 0;
+        background: none; /* suppression de l'arrière plan */
+        width: 180px;
+        height: 20px;
+
+        position: relative;
+        bottom: 110px;
+        margin-bottom: -51px;
+    }
+
+    /* source formes: https://www.zonecss.fr/laboratoire-css/les-formes-geometriques.html*/
+    #blocDeProjets {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 1500px;
+
+    }
+
+    .unProjet {
+        border: 5px #efefef solid;
+        width: 260px;
+        box-shadow: 0 0 20px 5px black;
+
+
+        margin: 30px 30px 30px 30px;
+    }
+
+    #conteneurBloc {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .unProjet > a > img {
+        width: 252px;
+        height: 140px;
+        margin-bottom: -5px;
+        border: 4px #dc0000 solid;
+    }
+
+    .unProjet > a:not(hover) h2 {
+        position: relative;
+        bottom: 75px;
+        left: 5px;
+        margin-bottom: -73px;
+
+        width: 255px;
+        height: 55px;
+
+        font-family: 'police_thenextfont', serif;
+        font-size: 22px;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        text-decoration: none;
+
+    }
+
+    .unProjet > a > p {
+        position: relative;
+        bottom: 105px;
+        left: 5px;
+        margin-bottom: -44px;
+
+        color: white;
+        font-size: 20px;
+
+        background-color: #dc0000;
+        width: 175px;
+        height: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    a:hover .rectangle {
+        background: blue;
+    }
+
+    a:hover h2 {
+        color: white;
+    }
+
+    a:hover .triangle {
+        border-color: transparent transparent darkblue transparent; /* transparence */
+    }
+
+    a:hover img {
+        border: 4px darkblue solid;
+    }
+
+    a:hover p{
+        background-color: darkblue;
+    }
+}

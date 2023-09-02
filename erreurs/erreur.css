@@ -1,0 +1,213 @@
+#backgroundErreurCouleur{
+    background-color: red;
+}
+
+@media only screen and (min-width: 940px) {
+    .encartErreur {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .encartExcuseErreur {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 80px;
+        left: 0; /* le 27/02/23 à 14h32 : supprimer le left résout le pb*/
+    }
+
+    .encartErreur > .titreErreur {
+        font-family: 'police_montserrat', serif;
+        color: white;
+        background-color: red;
+        z-index: 1;
+    }
+
+    .encartErreur > .messageErreur {
+        font-family: 'police_montserrat', serif;
+
+        position: relative;
+        top: 40px;
+        right: 80px;
+        z-index: 3;
+    }
+
+    .encartErreur > .statut_haut {
+        position: relative;
+        top: 10px;
+    }
+
+    .encartExcuseErreur > .imgExcuse {
+        /*min-width: 10px; min-height: 5px;*/
+        max-width: 450px;
+        max-height: 270px;
+        object-fit: contain;
+
+        position: relative;
+        top: 50px;
+        /*margin-left: 10%;*/
+        right: 250px;
+    }
+
+    .encartExcuseErreur > .titreExcuse {
+        font-family: 'police_montserrat', serif;
+
+        position: relative;
+        bottom: 190px;
+        left: 320px;
+        white-space: nowrap;
+
+    }
+
+    .encartExcuseErreur > .txtExcuse {
+        font-family: 'police_arial', serif;
+        width: 400px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        position: relative;
+        bottom: 150px;
+        left: 170px;
+
+    }
+
+}
+
+@media only screen and (max-width: 939px) {
+    .encartErreur {
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        top: -20px;
+
+    }
+
+
+    .encartErreur > .titreErreur {
+        font-family: 'police_montserrat', serif;
+        color: white;
+    }
+
+    .encartErreur > .messageErreur {
+        font-family: 'police_montserrat', serif;
+
+        position: relative;
+        top: 40px;
+        right: 80px;
+        z-index: 3;
+
+    }
+
+    .statut_haut {
+        position: absolute;
+        top: 120px;
+    }
+
+}
+
+/* téléphone portrait*/
+@media only screen and (max-width: 660px) {
+    .encartExcuseErreur {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .encartExcuseErreur > .imgExcuse {
+        max-width: 250px;
+        max-height: 135px;
+        object-fit: contain;
+
+        position: relative;
+        top: 100px;
+    }
+
+    .encartExcuseErreur > .titreExcuse {
+        font-family: 'police_montserrat', serif;
+
+        position: relative;
+        top: 150px;
+        right:50px;
+
+        white-space: nowrap;
+
+    }
+
+    .encartExcuseErreur > .txtExcuse {
+        font-family: 'police_arial', serif;
+        max-width: 330px;
+        min-width: 250px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        position: absolute;
+        top: 190px;
+        left: 70px;
+
+        padding-bottom: 20px;
+
+
+    }
+
+}
+
+@media only screen and (min-width: 661px) and ( max-width: 939px){
+
+    .encartExcuseErreur {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 30px;
+
+
+    }
+
+    .imgExcuse {
+        max-width: 250px;
+        max-height: 135px;
+        object-fit: contain;
+
+        position: relative;
+        top: 100px;
+        right: 180px;
+
+    }
+
+
+    .encartExcuseErreur > .titreExcuse {
+        font-family: 'police_montserrat', serif;
+        white-space: nowrap;
+
+        position: relative;
+        left: 220px;
+        bottom: 50px;
+
+
+    }
+
+    .encartExcuseErreur > .txtExcuse {
+        font-family: 'police_arial', serif;
+        max-width: 330px;
+        min-width: 250px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        position: relative;
+        left: 60px;
+        bottom: 15px;
+
+
+        padding-bottom: 20px;
+    }
+
+
+}

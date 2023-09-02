@@ -1,0 +1,160 @@
+@media only screen and (min-width: 1050px) {
+    img {
+
+        object-fit: cover; /* ajuste l'image pour remplir le conteneur en rognant */
+
+
+        border: 1px black solid;
+        overflow: hidden;
+
+        max-width: 532px;
+
+
+    }
+
+    a{
+        display: flex;
+
+        height: 200px; /* définit la largeur maximale de chaque image */
+        object-fit: cover; /* ajuste l'image pour remplir le conteneur en rognant */
+        overflow: hidden;
+        margin: auto 20px auto 20px;
+    }
+
+    a:hover{
+        animation-duration: 0.5s;                           /*Durée de l'animation*/
+        animation-name: decouvreImage;              /*Active l'animation*/
+        animation-fill-mode: forwards;
+    }
+
+
+    a:not(hover){
+        animation-duration: 0.3s;                           /*Durée de l'animation*/
+        animation-name: recouvreImage;              /*Active l'animation*/
+
+    }
+
+    .CategoriePortfolio {
+        display: flex; /* affiche les images côte à côte */
+        justify-content: center;
+        overflow: hidden; /* empêche les images de dépasser du conteneur */
+
+
+        max-width: 1200px;
+        height: 280px;
+
+        margin-bottom: -30px;
+
+
+
+    }
+
+    #AffichageCategoriesPortfolio {
+
+        position: relative;
+        top: 10px;
+
+        display: grid;
+        align-items: center;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-bottom: 200px;
+    }
+
+    #couleurFondPage {
+        background-image: url("../../../mediasglobal/img/portfolio/fond.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+
+
+    @keyframes decouvreImage {
+        from{
+
+            overflow: visible;
+        }
+        to{
+            height: 230px;
+
+            overflow: visible;
+
+            border: 1px black solid;
+            box-shadow: 0 0 15px 3px black;
+        }
+
+    }
+
+    @keyframes recouvreImage {
+        from{
+            height: 230px;
+
+            overflow: visible;
+
+            border: 1px black solid;
+            box-shadow: 0 0 15px 3px black;
+        }
+        to{
+            display: flex;
+
+            height: 200px; /* définit la largeur maximale de chaque image */
+            object-fit: cover; /* ajuste l'image pour remplir le conteneur en rognant */
+            overflow: auto;
+            margin: auto 10px auto 10px;
+        }
+
+    }
+
+
+    a > h2{
+        position: absolute;
+        width: 180px;
+        padding-left: 10px;
+
+
+        font-family: 'police_montserrat', serif;
+        font-size: 20px;
+        color: white;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-shadow: 1px 0 5px black, 0 1px 5px black, 0 -1px 5px black, -1px 0 5px black, 1px 1px 5px black, 1px -1px 5px black, -1px 1px 5px black, -1px -1px 5px black;
+    }
+
+    a:hover > h2{
+        font-size: 25px;
+        padding-left: 15px;
+        width: 500px;
+
+        white-space: nowrap;
+    }
+
+    a > h3{
+        position: absolute;
+        width: 180px;
+        padding-left: 10px;
+        padding-top: 160px;
+
+        font-family: 'police_montserrat', serif;
+        font-size: 13px;
+        color: white;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-shadow: 1px 0 5px black, 0 1px 5px black, 0 -1px 0 black, -1px 0 5px black, 1px 1px 5px black, 1px -1px 0 black, -1px 1px 5px black, -1px -1px 0 black;
+    }
+
+    a:hover > h3{
+        font-size: 15px;
+        padding-left: 15px;
+        width: 500px;
+
+        white-space: nowrap;
+
+        padding-top: 35px;
+    }
+}

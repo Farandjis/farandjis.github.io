@@ -1,0 +1,232 @@
+/*Affichage sur ordinateur*/
+@media only screen and (min-width: 780px) {
+
+    #bodyPage{
+        background-color: #fc8a01;
+    }
+
+
+    #contenuPage{
+        position: relative; top: 80px;
+    }
+
+    .contenuPage{
+        position: relative; top: 80px;
+    }
+
+    #couleurFondPage{
+        background-color: white;
+    }
+
+    .PoliceIcones{
+        font-family: 'police_icone', serif;
+    }
+
+    p{
+        font-family: 'police_arial', serif;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+
+    .fondMenuSticky{
+        background-color: #fc8a01;
+        height: 80px;
+        /*border-radius: 0px 0px 10px 10px;*/
+        opacity: 0.5;
+    }
+
+    .blocFondPage1{
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 80%;
+        clip-path: polygon(0 0, 100% 0, 100% 250px, 0 90px);
+    }
+
+    .blocFondPage1b{
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 320px, 0 160px);
+    }
+
+
+    .blocFondPage2{
+        position : absolute;
+        margin-top: -140px;
+
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 160px;
+        clip-path: polygon(103% 160px, 0 160px, 0 0, 0 0);
+    }
+
+    .blocFondPage2b {
+        position: absolute;
+        margin-top: -340px;
+
+        left: 0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 500px;
+        clip-path: polygon(0 35%, 100% 67%, 100% 100%, 0% 100%);
+    }
+
+    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
+    .HautCSS {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 50px;
+        left: 49.7%;
+        transform: translate(-50%, -50%);
+
+        width:99.8%;
+
+
+    }
+
+    iframe{
+        border: none;
+    }
+
+    .HautCSS > .menu_haut {
+        position: relative;
+        top:-10px;
+        width: 1068px;
+        height: 80px;
+    }
+    .HautCSS > .statut_haut {
+        position: relative;
+        top:-3px;
+        width: 269px;
+        height: 70px;
+    }
+
+
+    .titrePage{
+        background-color: #fc8a01;
+    }
+
+    #coordonnesBas{
+        width: 100%;
+        height: 250px;
+    }
+
+    footer > iframe{
+        position: relative;
+        top: 150px;
+        z-index: 1000;
+    }
+
+
+    .boutonPlusDInfo:hover{
+        background-image: url("/mediasglobal/img/theme/selecteurs/Selecteur0.png");
+
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        animation-duration: 0.5s;
+        animation-name: AnimationSelection1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes AnimationSelection1 {
+        from{
+            padding: 5px 0 5px 0;
+            background-position: -50px;
+        }
+
+        to{
+            padding: 5px 0 5px 25px;
+            background-position: left;
+        }
+    }
+
+    .boutonPlusDInfo:not(hover){
+        background-image: url("/mediasglobal/img/theme/selecteurs/Selecteur0.png");
+
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        animation-duration: 0.5s;
+        animation-name: AnimationDeselection1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes AnimationDeselection1 {
+        from{
+            padding: 5px 0 5px 25px;
+            background-position: left;
+        }
+
+        to{
+            padding: 5px 0 5px 0;
+            background-position: -50px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1320px){
+    .titrePage{
+        z-index: 1;
+        font-family: 'police_montserrat';
+        color: white;
+        position: relative;
+        bottom: 8px;
+        right: 30px;
+    }
+
+    header {
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+@media only screen and (min-width: 1320px) {
+    .titrePage {
+        z-index: 1;
+        font-family: 'police_montserrat';
+        text-align: end;
+        color: white;
+
+        position: relative;
+        bottom: 8px;
+        left: 460px;
+
+        width: 300px;
+        }
+
+    header {
+        display: flex;
+        justify-content: center;
+        }
+}
+
+@media only screen and (min-width: 1460px) {
+    .titrePage {
+        font-size: 40px;
+    }
+}

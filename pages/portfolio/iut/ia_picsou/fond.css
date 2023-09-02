@@ -1,0 +1,17 @@
+#fondArticleCodePicsou{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("codePicsou_fond.webp");
+}
+
+#fondArticleMoi{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("../../../../mediasglobal/img/logoFOND.webp");
+    background-position: bottom left;
+    background-size: 200px 200px;
+}
+
+#fondArticleCodeIA{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("codeIA.webp");
+}
+
+#fondArticleExpWindows{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("fichiers.webp");
+}

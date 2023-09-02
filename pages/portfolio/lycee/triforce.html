@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : Evariste 2000</title>
+        <meta name="description" content="En lien avec la récursivité : projet de création de triangles à partir de trapèzes...">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, projet python informatique, nsi sartrouville, nsi evariste galois, lycée évariste galois, projet nsi">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Projet «Triforce»</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>Pavage</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="triforce/miniature.webp" alt="Illustration du projet Pavage que j'appel projet Triforce">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>19/11/2021</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>07/12/2021</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langage</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Linkieu/pavage_et_bateau.git" target="_blank">Voir la page GitHub</a>
+                            <a class="boutonPlusDInfo" href="triforce/projet_pavage_merged.pdf" target="_blank">Voir l'énoncé du projet</a>
+                            <a class="boutonPlusDInfo" href="triforce/note.webp" target="_blank">Mon appréciation et ma note</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+
+                        <p>
+                            Après notre projet Turtle "Bateau" en NSI en première, voici le projet pavage.<br>
+                            <br>
+                            Le principe ?<br>
+                            Construire un triangle à partir de trapèze.<br>
+                            Au fur et à mesure du projet, le triangle s'est perfectionné. Passant de la couleur unique à
+                            un triangle composé de trapèzes de différentes couleurs.<br>
+                            Vu que ce triangle est composé de trapèze, il a un trou. La partie avancée du projet
+                            consistait à mettre à d'autres endroits ce trou.<br>
+                            <br>
+                            Derrière l'apparence simple du projet, c'est un vrai casse-tête avec la récursivité !<br>
+                            J'ai réussi à faire le projet, et même sa version avancée.<br>
+                            <br>
+                            La récursivité est quelque chose que je redoute beaucoup. À la moindre erreur, tout plante.<br>
+                            C'est à la fois passionnant et déprimant parfois...<br>
+                            <br>
+                            <br>
+                            Mais c'est ce qui fait son charme.<br>
+                            <br>
+                            <b>Le projet "Bateau" de l'année de première est disponible avec le projet "Pavage" sur GitHub.</b>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Lancer le projet</h1>
+
+                        <p>
+                            Pour pouvoir lancer le programme, vérifiez que vous possédez bien les modules suivants :
+                        </p>
+                        <ul>
+                            <li><p>Turtle</p></li>
+                            <li><p>Random</p></li>
+                        </ul>
+
+                        <p>
+                            <b>Pour lancer le projet</b>, importer puis exécuter le fichier projet_tri_force_avancer.py.<br>
+                            <br>
+                            Le projet a été créé avec l'IDE Spyder (Ananconda).<br>
+                            Si vous n'avez pas de programme pour lancer le projet Python, vous pouvez installer l'IDE <a class="boutonPlusDInfo" href="https://edupython.tuxfamily.org/documentation-sauvegarde/index0ea0.html?title=Installation_et_Configuration" target="_blank">EduPython</a>.<br>
+                            Je recommande EduPython si vous souhaitez tester le projet sans vous embêter avec l'installation des modules ou de Python.<br>
+                            <br>
+                            <br>
+                            <b>Sur EduPython:</b><br>
+                            <i>Importer :</i> Fichier > Ouvrir > projet_tri_force_avancer.py<br>
+                            <i>Lancer le jeu :</i> Exécuter > Exécuter (Ctrl + F9)<br>
+                            <i>Arrêter le jeu :</i> Exécuter > Stopper le debuggage (Ctrl + Alt + F9)<br>
+                            <br>
+                            Note : les modules cités sont présents par défaut dans EduPython.<br>
+                            Note 2 : le projet "Bateau" de l'année de première est disponible avec le projet "Pavage".
+                        </p>
+                    </div>
+
+
+                    </div>
+                </div>
+
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <img src="triforce/exemple.gif" alt="Turtle qui créer un triangle">
+                            <img src="triforce/etape1.webp" alt="Un triangle qui se créer (1/3)">
+                            <img src="triforce/etape2.webp" alt="Un triangle qui se créer (2/3)">
+                            <img src="triforce/mafa1.webp" alt="[HORS SUJET]: Projet Bateau de première NSI 1/2 (logo Mafa, reprise de celui de M6)">
+                            <img src="triforce/mafa2.webp" alt="[HORS SUJET]: Projet Bateau de première NSI 2/2 (le bateau)">
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

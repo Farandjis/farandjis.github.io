@@ -1,0 +1,95 @@
+@media only screen and (max-width: 950px) {
+    .contenuPageReadapter {
+        position: relative;
+    }
+
+    .contenuPage{
+        position: relative;
+
+    }
+
+    #positionFooterPourMobile{
+        position: relative;
+        margin-top: 0;
+    }
+
+    .encartArticle {
+        background-repeat: no-repeat;
+        background-size: 100% 100%, cover;
+
+    }
+
+    .positionnementImageMobile{
+        position: relative;
+        display: grid;
+        justify-content: center;
+    }
+
+    .encartArticle > .positionnementImageMobile > img{
+        max-width: 250px;
+        max-height: 140px;
+
+        margin-bottom: 15px;
+        margin-top: -15px;
+
+        border: 1px black solid;
+    }
+
+    .encartArticle > h1{
+        font-family: police_urbandefender;
+        letter-spacing : 2px;
+
+        margin-left: 10px;
+
+    }
+
+    .encartArticle > p{
+        position: relative;
+        bottom: 20px;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+
+    #titrePlusDImage{
+        font-family: police_urbandefender;
+        letter-spacing : 2px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .plusDImage{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        margin-top: -5px;
+    }
+
+    .plusDImage > img, .plusDImage > a > img{
+        max-width: 290px;
+        max-height: 180px;
+        margin: 10px 10px 10px 10px;
+
+        border: 1px black solid;
+    }
+
+    #titrePlusDImage{
+        font-family: police_urbandefender;
+        letter-spacing : 2px;
+        margin-bottom: 0;
+    }
+
+    ul, ol{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+
+    ul > li, ol > li{
+        margin-top: -15px;
+    }
+}
+

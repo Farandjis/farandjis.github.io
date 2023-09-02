@@ -1,0 +1,15 @@
+#fondArticlePresentation{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("Evariste2000_logo.webp");
+}
+
+#fondArticleFonctionnalite{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("personnalisable_fond.webp");
+}
+
+#fondArticleLancer{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("img8_fond.webp");
+}
+
+#fondArticleProblemes{
+    background-image: url("../../../../mediasglobal/img/fond/fonduBlancaa.webp"), url("error_fond.webp");
+}

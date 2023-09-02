@@ -1,0 +1,39 @@
+
+/* URBAN JUNGLE : https://www.dafont.com/urban-jungle.font*/
+@font-face {
+    font-family: 'police_urbanjungle';
+    src: url('../polices/UrbanJungleDEMO.otf');
+}
+
+/* MONTSERRAT : https://fonts.google.com/specimen/Montserrat*/
+@font-face {
+  font-family: 'police_montserrat';
+  src: url('../polices/Montserrat-ExtraBoldItalic.ttf');
+	}
+
+@font-face {
+  font-family: 'police_arial';
+  src: url('../polices/arial.ttf');
+	}
+
+/* THE NEXT FONT : https://www.dafont.com/the-next-font.font*/
+@font-face {
+    font-family: 'police_thenextfont';
+    src: url('../polices/TheNextFont.ttf');
+}
+
+/* Police créer pour le site. Les icônes présentes de dans appartiennent à Microsoft (voir page des crédits).*/
+@font-face {
+    font-family: 'police_icone';
+    src: url('../polices/Icones-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'police_sword';
+    src: url('../polices/font_pack__sword_by_mucrush_dd66dt7.otf');
+}
+
+@font-face {
+    font-family: 'police_urbandefender';
+    src: url('../polices/urbandefender.ttf');
+}

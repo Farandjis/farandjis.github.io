@@ -1,0 +1,68 @@
+
+.fond_et_bord{
+    /*     background-color: lightskyblue;*/
+    background-color: white;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+
+}
+
+.centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* animation:emptyanim;*/
+
+img{
+
+    width: 48px;
+    height: 100%;
+
+    animation-duration: 0.5s;
+    animation-name: glissementCacheTitre;
+    padding: 0 5px 5px 5px;
+
+
+}
+
+img:hover{
+    animation-duration: 0.5s;                           /*Durée de l'animation*/
+    animation-name: glissementLibereTitre;              /*Active l'animation*/
+    animation-fill-mode: forwards;                      /*Reste à l'affichage de la fin de l'anim*/
+    background-size: 260px 55px;
+    background-position-y: -2px;
+}
+
+.accueil:hover{ background-image: url(icones/clique/accueil.png); }
+.presentation:hover{ background-image: url(icones/clique/presentation.png); }
+.portfolio:hover{ background-image: url(icones/clique/portfolio.png); }
+.meContacter:hover{ background-image: url(icones/clique/meContacter.png); }
+.cv:hover{ background-image: url(icones/clique/cv.png); }
+.inconnu:hover{ background-image: url(icones/clique/inconnu.png); }
+.youtube:hover{ background-image: url(icones/clique/youtube.png); }
+
+@keyframes glissementLibereTitre {
+    from {
+        padding: 0 5px 5px 5px;
+    }
+
+    to {
+        padding: 0 207px 5px 10px;
+    }
+}
+
+@keyframes glissementCacheTitre {
+    from {
+        padding: 0 207px 5px 10px;
+    }
+
+    to {
+        padding: 0 5px 5px 5px;
+
+    }
+}

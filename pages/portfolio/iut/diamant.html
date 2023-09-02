@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>SAÉ : Implémentation du jeu de société Diamants (Python)</title>
+        <meta name="description" content="Page du projet d'implémentation du jeu de société Diamants en Python. SAÉ de BUT Informatique 1ère année.">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, portfolio en informatique, iut vélizy, but informatique, portfolio vélizy, incan gold python, diamants python, but informatique jeu python, projet python informatique">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <script src="../../../mediasglobal/redirection/versSiteSiIframeIllegal.js"></script>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+        <link rel="stylesheet" href="diamant/fond.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">SAÉ Diamant</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>Diamant</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="diamant/lejeu_miniature.webp" alt="Miniature du projet d'implémentation de Diamants en Python. Il y a une image de la boîte du jeu de société + une capture d'écran du jeu">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>17/11/2022</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>17/12/2022</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langage</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                            <p>Tom B.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Linkieu/Diamant.git" target="_blank">Voir la page GitHub</a>
+                            <a class="boutonPlusDInfo" href="diamant/sae01_diamants.pdf" target="_blank">Voir l'énoncé du projet</a>
+                            <a class="boutonPlusDInfo" href="diamant/DIAMANT_regles.pdf" target="_blank">Voir les règles du jeu</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle" id="fondArticlePresentation">
+                        <h1>Présentation</h1>
+                        <div class="positionnementImageMobile">
+                            <img src="diamant/plateauDeJeu.webp" alt="Plateau de jeu du mode graphique">
+                        </div>
+
+                        <p>
+                            4ème <abbr title="Situation d'Apprentissage et d'Évaluation">SAÉ</abbr> de notre formation,
+                            nous avons dû cette fois-ci retranscrire le jeu de société Diamant en Python.<br>
+                            <br>
+                            En plus de permettre au joueur de jouer directement sur la console, nous avons dû créer une interface graphique.<br>
+                            Pour cela, nous utilisons Tkiteasy, une version simplifiée de TKinter fournit par l'IUT.<br>
+                            <br>
+
+                            <i><b>Présentation du jeu tiré de l'énoncé de la SAÉ :</b></i><br>
+                            Le principe du jeu est simple, se jouant essentiellement avec des cartes et quelques jetons.
+                            Le mécanisme du jeu est dit de « stop ou encore » : à chaque étape,
+                            les joueurs doivent décider s’ils sécurisent leur gain, ou s’ils prennent des risques pour
+                            gagner davantage, au risque de tout perdre !
+                            <br>
+                            <br>
+                            <i>Une des SAÉ suivantes consistait à créer une IA capable de remporter des parties de ce jeu.</i><br>
+                            <br>
+                            <b>Note reçus :</b> 18,5/20
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleLancerJeu">
+                        <h1>Lancer le jeu</h1>
+
+                        <p>
+                            Pour pouvoir lancer le jeu, vérifiez que vous possédez bien les modules suivants :
+                        </p>
+                        <ul>
+                            <li><p>Random</p></li>
+                            <li><p>Time</p></li>
+                            <li><p>Tkinter, PIL</p></li>
+                        </ul>
+
+                        <p>
+                            <b>Pour lancer le projet</b>, importer puis exécuter le fichier Diamant.py.<br>
+                            Dans la console, le jeu vous propose de lancer ou non le mode graphique.<br>
+                            Appuyez sur la touche « <b>A</b> » pour lancer le mode graphique ou « <b>B</b> » pour le mode console.<br>
+                            <br>
+                            <br>
+                            Le projet a été créé avec l'IDE PyCharm (de JetBrains).<br>
+                            Si vous n'avez pas de programme pour lancer le projet Python, vous pouvez installer l'IDE <a class="boutonPlusDInfo" href="https://edupython.tuxfamily.org/documentation-sauvegarde/index0ea0.html?title=Installation_et_Configuration" target="_blank">EduPython</a>.<br>
+                            Je recommande EduPython si vous souhaitez tester le projet sans vous embêter avec l'installation des modules ou de Python.<br>
+                            <br>
+                            <br>
+                            <b>Sur EduPython:</b><br>
+                            <i>Importer :</i> Fichier > Ouvrir > Diamants.py<br>
+                            <i>Lancer le jeu :</i> Exécuter > Exécuter (Ctrl + F9)<br>
+                            <i>Arrêter le jeu :</i> Exécuter > Stopper le debuggage (Ctrl + Alt + F9)<br>
+                            <br>
+                            Note : les modules cités sont présents par défaut dans EduPython.<br>
+
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleMoi">
+                        <h1>Mon rôle dans le projet</h1>
+                        <p>
+                            Bien que ce soit un travail de groupe, nous nous sommes répartis certaines tâches.<br>
+                            Je m'occupais principalement de la partie conception, de la documentation et du mode console du jeu.<br>
+                            <br>
+                            De son côté, Tom s'occupait surtout du mode graphique.<br>
+                            Il a créé l'interface, cherché les images dont certaines ont été retouchées pour s'adapter à notre projet.<br>
+                            Je me suis occupé des boîtes de dialogues et l'adaptation du texte dans celle-ci.<br>
+                            <br>
+                            Nous avons fait le reste des tâches à deux, comme la création du code.<br>
+                            <br>
+                            Nous avons cherché à mêler le meilleur de chacun de nous pour offrir le meilleur projet possible.<br>
+                            C'était une tâche très compliquée à cause du peu de temps qu'on avait.<br>
+                            Nous n'avons pas les connaissances d'aujourd'hui en matière de gestion de projet de plus.<br>
+                            La version rendue et notée comportait des bugs. Mais vous retrouverez sur Github la version corrigée du projet.<br>
+                            La plupart des bugs ont été corrigés.<br>
+
+
+                        </p>
+                    </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <img src="diamant/tirerCarte.webp" alt="Mode graphique : Message tirer une carte">
+                            <img src="diamant/prisDePeur.webp" title="L'un des nombreux texte informant les joueurs d'un évènement dans le jeu. Ici, un accident." alt="Mode graphique : Texte informant les joueurs d'un accident">
+                            <img src="diamant/papyPlusPodium.webp" title="Des personnages sont présent et anime l'histoire, dont ce vieux monsieur." alt="Mode graphique : Podium + message de menace d'un villageois">
+                            <img src="diamant/plateauDeJeuConsole.webp" title="Un mode console est disponible en plus du mode graphique." alt="Mode console : Plateau de jeu">
+
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

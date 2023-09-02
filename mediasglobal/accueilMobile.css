@@ -1,0 +1,618 @@
+@media only screen and (max-width: 901px) {
+    #PresentationPhoto {
+        /* Bordure flou */
+
+        box-shadow: 0 0 10px 10px white;
+        border: 1px solid black;
+    }
+}
+
+@media only screen and (max-width: 652px){
+
+    #SectionPresentation{
+        margin-left: 130px;
+    }
+
+    #SectionFormation{
+
+        margin-left: 130px;
+        max-width: 282px;
+    }
+
+    .FormationNom{
+
+        bottom: 170px;
+        left: 120px;
+        width: 133px;
+    }
+
+    .FormationDuree{
+        bottom: 195px;
+        left: 260px;
+    }
+
+    #SectionCompetences{
+        bottom: 195px;
+        margin-left: 10px;
+    }
+
+    #SectionLeSite{
+        margin-left: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 652px) and (max-width: 781px) {
+    .FormationNom{
+        bottom: 170px;
+        right: 40px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .FormationDuree{
+        margin-left: auto;
+        margin-right: auto;
+
+        bottom: 195px;
+    }
+
+    #SectionCompetences{
+        margin-left: auto;
+        margin-right: auto;
+
+        right: 120px;
+    }
+
+    #SectionLeSite{
+        margin-left: auto;
+        margin-right: auto;
+
+        right: 70px;
+    }
+
+    .ListeLeSitePages{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 781px) {
+
+
+    .section{
+        position: relative;
+        top: 10px;
+    }
+
+    .SectionTitre{
+        font-size: 25px;
+
+
+
+        position: relative;
+        padding-left: 60px;
+
+
+        padding-bottom: 30px;
+
+        font-family: 'police_thenextfont', serif;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #SectionPresentation{
+
+        top: 65px;
+
+        /*padding-left: 90px;*/
+        right: 120px;
+        max-width: 300px;
+    }
+
+    .EmplacementPresentation{
+
+        position: relative;
+        top:100px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #PresentationPhoto{
+        object-fit: contain;
+
+        position: absolute;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        top: -50px;
+        left: 10px;
+
+        width: 90px;
+    }
+
+
+    #PresentationTexte{
+        display: grid;
+        justify-content: center;
+
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        top: -95px;
+        max-width: 500px;
+
+        padding-left: 120px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+
+    }
+
+    /* ----------------------------------------------------------------------------------- */
+
+
+    #SectionFormation{
+        position: relative;
+        top: 200px;
+        right: 120px;
+        max-width: 300px;
+
+
+    }
+
+    .EmplacementFormation{
+        position: relative;
+        top: 250px;
+
+    }
+
+    .FormationLogo{
+        display: none;
+    }
+
+    .FormationLogoMini{
+        visibility: visible;
+
+        max-width:100px;
+        max-height: 100px;
+
+        position: relative;
+        bottom: 30px;
+        left: 5px;
+    }
+
+    .FormationNom{
+        font-size: 17px;
+
+        position: relative;
+
+        max-width: 300px;
+
+        font-family: 'police_arial', serif;
+    }
+
+    .FormationDuree{
+
+        font-size: 14px;
+        font-style: italic;
+        width: 79px;
+
+        position: relative;
+    }
+
+    .FormationTexte{
+        display: grid;
+        justify-content: center;
+
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        bottom: 200px;
+        max-width: 500px;
+
+        padding-left: 120px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+
+    #SectionCompetences{
+        max-width: 300px;
+
+        position: relative;
+        top: 220px;
+    }
+
+    #EmplacementCompetences{
+        position: relative;
+        top: 150px;
+    }
+
+    #CompetencesIcone{
+        max-width:400px;
+        max-height: 100px;
+
+
+        position: relative;
+        top: 30px;
+        left: 10px;
+
+    }
+
+    .CompetencesTexte{
+        display: grid;
+        justify-content: center;
+
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        bottom: 100px;
+        max-width: 500px;
+
+        padding-left: 120px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        /*
+        width: 500px;
+
+        position: relative;
+        top: 185px;
+        left: 130px;
+
+        font-size: 16px;
+
+         */
+    }
+
+    /* ----------------------------------------------------------------------------------- */
+
+    #SectionLeSite{
+        max-width: 400px;
+        top: 100px;
+    }
+
+    #EmplacementLeSite{
+        position: relative;
+    }
+
+    .LeSiteTexte{
+
+        display: grid;
+        justify-content: center;
+
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+
+        top: 50px;
+        max-width: 500px;
+
+        padding-left: 120px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        /*
+        max-width: 400px;
+
+        position: relative;
+        bottom: 100px;
+        left: 140px;
+
+        font-size: 16px;
+         */
+    }
+
+    .ListeLeSitePages{
+        position: relative;
+        top: 50px;
+    }
+
+    /* ========= */
+
+    .EmplacementLeSitePages{
+        position: relative;
+        left: 0;
+        padding-bottom: 110px;
+    }
+
+    .iconeLeSitePages{
+        height: 30px;
+        width: 30px;
+    }
+
+    .titreLeSitePages{
+        height: 38px;
+
+        position: absolute;
+        left: -10px;
+        top: -5px;
+    }
+
+    .descriptionLeSitePages{
+        position: absolute;
+        left: 38px;
+        top: 16px;
+
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 781px) and (max-width: 901px) {
+    .section{
+        display: grid;
+        justify-content: center;
+
+        position: relative;
+        top: 10px;
+    }
+
+    .SectionTitre{
+        font-size: 30px;
+
+        display: grid;
+        justify-content: center;
+
+        position: relative;
+        right:130px;
+
+        padding-bottom: 30px;
+
+        font-family: 'police_thenextfont', serif;
+    }
+
+    #SectionPresentation{
+        right: 70px;
+        top: 80px;
+    }
+
+    .EmplacementPresentation{
+        position: relative;
+        bottom: 250px;
+
+    }
+
+    #PresentationPhoto{
+        object-fit: contain;
+
+        position: relative;
+        right: 80px;
+        top: 300px;
+
+        width: 120px;
+    }
+
+
+    #PresentationTexte{
+        position: relative;
+        left: 120px;
+        top: 100px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        width: 500px;
+        font-size: 16px;
+
+    }
+
+
+    /* ----------------------------------------------------------------------------------- */
+
+
+    #SectionFormation{
+        top:10px;
+        padding-left: 230px;
+    }
+
+    .EmplacementFormation{
+        position: relative;
+        padding-top: 35px;
+        /*top: 450px;*/
+        right: 55px;
+
+    }
+
+    .FormationLogo{
+        max-width:230px;
+        max-height: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+        bottom: 20px;
+        right: 120px;
+
+
+    }
+
+    .FormationNom{
+
+        font-size: 20px;
+
+        display: grid;
+        justify-content: center;
+
+        position: relative;
+        bottom: 163px;
+        left: 5px;
+
+        font-family: 'police_arial', serif;
+
+
+    }
+
+    .FormationDuree{
+        font-size: 15px;
+        font-style: italic;
+
+        display: grid;
+        justify-content: center;
+
+        position: relative;
+        bottom: 188px;
+        left: 170px;
+    }
+
+    .FormationTexte{
+        font-size: 16px;
+
+        display: grid;
+        justify-content: center;
+
+        position: relative;
+        top: -195px;
+        left: 150px;
+
+        width: 400px;
+    }
+
+    .FormationLogoMini{
+        display: none;
+    }
+
+    /* ------------------------------------------------------------------------------------- */
+
+    #SectionCompetences{
+        bottom: 80px;
+        right: 70px;
+    }
+
+    #EmplacementCompetences{
+        position: relative;
+    }
+
+    #CompetencesIcone{
+        max-width:400px;
+        max-height: 130px;
+
+        position: relative;
+        right: 90px;
+        bottom: 120px;
+    }
+
+    .CompetencesTexte{
+
+        width: 500px;
+
+        position: relative;
+        bottom: 290px;
+        left: 120px;
+
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------------------------------------------------- */
+
+    #SectionLeSite{
+        bottom: 100px;
+        right: 30px;
+        padding-left: 145px;
+    }
+
+    #EmplacementLeSite{
+        position: relative;
+    }
+
+    #LeSiteIcone{
+        max-width:120px;
+        max-height: 120px;
+
+        position: relative;
+        bottom: 50px;
+    }
+
+    .LeSiteTexte{
+
+        width: 500px;
+
+        position: relative;
+        bottom: 300px;
+        left: 245px;
+
+        font-size: 16px;
+    }
+
+    /* ----------------------------------------------------------------------------------- */
+
+    #SectionLeSite{
+        bottom: 100px;
+        left: 0;
+        padding-left: 145px;
+    }
+
+    #EmplacementLeSite{
+        position: relative;
+
+    }
+
+    .LeSiteTexte{
+
+        width: 450px;
+
+        position: relative;
+        bottom: 180px;
+        left: 140px;
+
+        font-size: 16px;
+    }
+
+    .ListeLeSitePages{
+        position: relative;
+        bottom: 200px;
+    }
+
+    /* ========= */
+
+    .EmplacementLeSitePages{
+        position: relative;
+        right: 140px;
+        padding-bottom: 45px;
+    }
+
+    .iconeLeSitePages{
+        height: 50px;
+        width: 50px;
+    }
+
+    .titreLeSitePages{
+        height: 58px;
+
+        position: absolute;
+        right: 185px;
+        top: -3px;
+    }
+
+    .descriptionLeSitePages{
+        position: absolute;
+        left: 280px;
+        top: 0px;
+
+        width: 450px;
+    }
+}

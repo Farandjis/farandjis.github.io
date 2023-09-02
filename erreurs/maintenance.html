@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>MAINTENANCE DU SITE</title>
+        <link rel="icon" href="../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/polices.css">
+
+        <link rel="stylesheet" href="erreur.css">
+        <script src="img_txt_aleatoire.js"></script>
+
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body onload="randomImage()">
+        <div class="blocFondPage1" id="backgroundErreurCouleur"></div>
+
+        <div class="encartErreur">
+            <h1 class="titreErreur">Oups...</h1>
+            <h3 class="messageErreur">On dirait que le site est en maintenance...</h3>
+            <iframe class="statut_haut" src="../statut.html" width="269" height="70"></iframe>
+        </div>
+
+
+        <div class="encartExcuseErreur">
+            <img class="imgExcuse" id="random-image" src="../mediasglobal/img/missingno.png" alt="Image aléatoire">
+        </div>
+
+        <div class="encartExcuseErreur">
+            <h2 class="titreExcuse">Pour m'excuser...</h2>
+            <p class="txtExcuse" id="random-text">JavaScript semble être désactivé !<br>Vous ratez quelque chose...</p>
+        </div>
+
+    </body>
+</html>

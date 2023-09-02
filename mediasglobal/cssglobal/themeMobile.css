@@ -1,0 +1,203 @@
+/*Affichage sur mobile*/
+@media only screen and (max-width: 780px) {
+
+    #contenuPage{
+        margin-top: 50px;
+    }
+
+    .contenuPage{
+        margin-top: 50px;
+    }
+
+    #bodyPage{
+        background-color: #fc8a01;
+    }
+
+    #couleurFondPage{
+        background-color: white;
+    }
+
+    .PoliceIcones{
+        font-family: 'police_icone', serif;
+    }
+
+    p{
+        font-family: 'police_arial', serif;
+    }
+
+    nav {
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+    }
+
+
+    .fondMenuSticky{
+        background-color: #fc8a01;
+        height: 80px;
+        border-radius: 0px 0px 10px 10px;
+        opacity: 0.5;
+    }
+
+    .blocFondPage1{
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 80%;
+        clip-path: polygon(0 0, 100% 0, 100% 180px, 0 90px);
+    }
+
+    .blocFondPage1b{
+        position: absolute;
+        top: 0px;
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 250px, 0 160px);
+    }
+
+    .blocFondPage2{
+        position : absolute;
+        margin-top: -150px;
+
+
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 300px;
+        clip-path: polygon(0 69%, 100% 99%, 100% 100%, 0% 100%);
+    }
+
+    .blocFondPage2b{
+        position : absolute;
+        margin-top: -300px;
+
+        left:0px;
+        z-index: 1;
+        background-color: #fc8a01;
+
+        width: 100%;
+        height: 400px;
+        clip-path: polygon(0 35%, 100% 58%, 100% 100%, 0% 100%);
+    }
+
+    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
+    .HautCSS {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 40px;
+        left: 49.7%;
+        transform: translate(-50%, -50%);
+
+        width:99.8%;
+    }
+
+    iframe{
+        border: none;
+    }
+
+
+    .HautCSS > .menu_haut {
+        width: 770px;
+        height: 80px;
+    }
+
+
+    .HautCSS .statut_haut {
+        position: absolute;
+        top: 79px;
+
+        width: 269px;
+        height: 80px;
+
+        visibility: hidden;
+
+    }
+
+    .titrePage{
+        z-index: 1;
+        font-family: 'police_montserrat';
+        color: white;
+        font-size: 20px;
+
+        background-color: #fc8a01;
+        position: relative;
+        bottom: 8px;
+        right: 30px;
+
+
+
+    }
+
+    header {
+        display: flex;
+        justify-content: end;
+    }
+
+    #coordonnesBas{
+        width: 100%;
+        height: 200px;
+    }
+
+    footer > iframe{
+        z-index: 1000;
+        position: relative;
+        top: 90px;
+    }
+
+    .boutonPlusDInfo:hover{
+        background-image: url("/mediasglobal/img/theme/selecteurs/Selecteur0.png");
+
+        background-repeat: no-repeat;
+        background-size: 12px 16px;
+
+        animation-duration: 0.3s;
+        animation-name: AnimationSelection1;
+        animation-fill-mode: forwards;
+    }
+
+    .boutonPlusDInfo:not(hover){
+        background-image: url("/mediasglobal/img/theme/selecteurs/Selecteur0.png");
+
+        background-repeat: no-repeat;
+        background-size: 12px 16px;
+
+        animation-duration: 0.3s;
+        animation-name: AnimationDeselection1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes AnimationSelection1 {
+        from{
+            background-position: -12px;
+        }
+
+        to{
+            padding-left: 15px;
+            background-position: left center;
+        }
+    }
+
+    @keyframes AnimationDeselection1 {
+        from{
+            padding-left: 15px;
+            background-position: left center;
+        }
+
+        to{
+            background-position: -12px;
+        }
+    }
+
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>ERREUR 404 - Page inexistante</title>
+        <link rel="icon" href="../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../mediasglobal/cssglobal/polices.css">
+        <link rel="stylesheet" href="../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="erreur.css">
+        <script src="img_txt_aleatoire.js"></script>
+
+        <script src="../mediasglobal/redirection/desactiver_versMaintenanceSiActif.js"></script>
+        <script src="../mediasglobal/redirection/versSiteSiIframeIllegal.js"></script>
+
+        <meta name="viewport" content="width=device-width">
+    </head>
+
+    <body onload="randomImage()">
+
+    <nav>
+        <div class="fondMenuSticky"></div>
+        <!--MENU-->
+        <div>
+            <div class="HautCSS">
+                <iframe class="menu_haut" src="../mediasglobal/menu/menuHaut.html" ></iframe>
+
+                <div class="ouvrir"></div>
+                <iframe class="statut_haut" src="../statut.html"></iframe>
+                <div class="refermer"></div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="blocFondPage1b" id="backgroundErreurCouleur"></div>
+
+    <main>
+
+
+        <div class="encartErreur">
+            <h1 class="titreErreur">Désolé...</h1>
+            <h3 class="messageErreur">On dirait que cette page n'existe pas...</h3>
+        </div>
+
+
+        <div class="encartExcuseErreur">
+            <img class="imgExcuse" id="random-image" src="../mediasglobal/img/missingno.png" alt="Image aléatoire">
+        </div>
+
+        <div class="encartExcuseErreur">
+            <h2 class="titreExcuse">Pour m'excuser...</h2>
+            <p class="txtExcuse" id="random-text">JavaScript semble être désactivé !<br>Vous ratez quelque chose...</p>
+        </div>
+    </main>
+
+
+    </body>
+</html>

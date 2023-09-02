@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>SAÉ : Création d'une IA pour le jeu Diamant (Python)</title>
+        <meta name="description" content="Page du projet d'implémentation du jeu de société Diamants en Python. SAÉ de BUT Informatique 1ère année.">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, portfolio en informatique, iut vélizy, but informatique, portfolio vélizy, incan gold python, diamants python, but informatique jeu python, projet python informatique">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <script src="../../../mediasglobal/redirection/versSiteSiIframeIllegal.js"></script>
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+        <link rel="stylesheet" href="ia_picsou/fond.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">SAÉ IA pour Diamant</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>IA Picsou</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="ia_picsou/codePicsou.webp" alt="Miniature du projet d'implémentation de Diamants en Python. Il y a une image de la boîte du jeu de société + une capture d'écran du jeu">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>03/01/2023</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>14/01/2023</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langage</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                            <p>Tom B.</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Linkieu/IA_Picsou_Diamant.git" target="_blank">Voir la page GitHub</a>
+                            <a class="boutonPlusDInfo" href="ia_picsou/SAE1.02_IA_diamant_enonce.pdf" target="_blank">Voir l'énoncé du projet</a>
+                            <a class="boutonPlusDInfo" href="ia_picsou/Rapport_IA_Picsou.pdf" target="_blank">Voir notre rapport</a>
+                            <a class="boutonPlusDInfo" href="ia_picsou/resultats.html" target="_blank">Voir le classement des IAs</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle" id="fondArticleCodePicsou">
+                        <h1>Présentation</h1>
+                        <div class="positionnementImageMobile">
+                            <img src="ia_picsou/minePicsou.webp" alt="Image de Picsou avec Riri Fifi et Loulou" style="border: none;">
+                        </div>
+
+                        <p>
+                            Après avoir implémenté le jeu Diamant sur Python, notre devoir
+                            cette fois-ci était de créer une intelligence artificielle pouvant jouer au jeu.<br>
+                            Nous étions libres sur la manière de procéder pour répondre à ce véritable défi.<br>
+                            Non seulement, on devait fournir une IA fonctionnelle, mais en plus, <b>elle devait être la meilleure possible.</b><br>
+                            En effet : un grand tournoi des IA était organisé.<br>
+                            <br>
+
+                            En cela, il fallait trouver le plus vite possible l’alchimie parfaite pour répondre à ces besoins, pour un jeu mélangeant aléatoire, habilité et ruse.<br>
+                            C'est après ce périple dont nous avons dû mettre toute notre énergie que nous sommes heureux de présenter l'IA Picsou.<br>
+                            <br>
+                            <br>
+                            L’IA Picsou, qui tout comme le célèbre personnage de Disney, est audacieux et malin pour arriver à ses fins.<br>
+                            <br>
+                            Et elle porte bien son nom !<br>
+                            En plus d'avoir surpassé toutes les IAs de notre classe, <b>elle a réussi à arriver deuxième</b> du classement de l'IUT sur plus de 30 IAs.<br>
+                            L'une de mes plus grandes fiertés face à des adversaires des plus redoutables.<br>
+                            <br>
+                            <br>
+                            Vous êtes curieux de connaître notre aventure ? Lisez notre rapport !<br>
+                            <br>
+                            <i>« Picsou » est un personnage appartenant à The Walt Disney Company. Ce projet n'est pas affilé.</i><br>
+                            <i>Notre travail repose sur celui du vidéaste Laupok.</i><br>
+                            <br><br>
+
+                            <b>Note reçus :</b> Performance 18,7/20
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleCodeIA">
+                        <h1>Utiliser l'IA</h1>
+
+                        <div class="positionnementImageMobile">
+                            <img src="ia_picsou/codeMain.webp" alt="Image de Picsou avec Riri Fifi et Loulou">
+                        </div>
+
+                        <p>
+                            <b>Notre IA n'est pas adapté pour fonctionner avec notre projet Diamant.</b><br>
+                            Je verrais pour l'adapter, mais ce n'est pas l'une de mes priorités.<br>
+                        </p>
+                        <br>
+                        <ol>
+                            <li>
+                                <p>
+                                    Pour essayer l'IA, vous devez récupérer le moteur de jeu en Python, fournis par nos professeurs.<br>
+                                    <a class="boutonPlusDInfo" href="ia_picsou/SAE_2_IA_Diamants_v2.zip" target="_blank"><b>Cliquez ici pour télécharger le moteur du jeu</b></a><br>
+                                    <br>
+                                    <i>Note : j'ai déjà ajouté notre IA dans le fichier main.py.</i><br>
+                                    <br>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Télécharger notre IA et placer "IA_Picsou.py" dans le dossier IA du dossier SAE_2_IA_Diamants_v2.<br>
+                                    Comme tout .zip que vous téléchargez... Pensez à le dézipper !<br>
+                                    <br>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Ouvrer le fichier main.py avec votre IDE Python favori et exécutez-le.
+                                </p>
+                            </li>
+                        </ol>
+                        <p>
+                            <b>Le déroulement de la partie est directement indiqué dans la console.</b><br>
+                            <br>
+                            Tout en bas, vous retrouverez le score des IA.<br>
+                            <br>
+                            Par exemple :<br>
+                            "IA aléatoire reçoit en fin de jeu scores = '48,15,0,7'"<br>
+                            Signifie (si vous n'avez pas modifié l'ordre d'importation des IA):<br>
+                        </p>
+                        <ul>
+                            <li><p>L'IA Picsou a eu 48 diamants.</p></li>
+                            <li><p>L'IA aléatoire a eu 15 diamants.</p></li>
+                            <li><p>L'IA téméraire a eu 0 diamant.</p></li>
+                            <li><p>L'IA trouillarde a eu 7 diamants.</p></li>
+                        </ul>
+                        <p>Forcément, face à des IA aussi basiques, Picsou dévalise les mines !</p>
+
+                        <hr>
+
+                        <p>
+                            <br><br><br>
+                            Le moteur utilise les modules suivants :
+                        </p>
+
+                            <ul>
+                                <li><p>Random</p></li>
+                                <li><p>Importlib</p></li>
+                            </ul>
+
+                        <p>
+                            Le projet a été créé avec l'IDE PyCharm (de JetBrains).<br>
+                            <b>Si vous n'avez pas de programme pour lancer le projet Python</b>, vous pouvez installer l'IDE <a class="boutonPlusDInfo" href="https://edupython.tuxfamily.org/documentation-sauvegarde/index0ea0.html?title=Installation_et_Configuration" target="_blank">EduPython</a>.<br>
+                            Je recommande EduPython si vous souhaitez tester le projet sans vous embêter avec l'installation des modules ou de Python.<br>
+                            <br>
+                            <b>Sur EduPython:</b><br>
+                            <i>Importer :</i> Fichier > Ouvrir > main.py<br>
+                            <i>Lancer le programme :</i> Exécuter > Exécuter (Ctrl + F9)<br>
+                            <i>Arrêter le programme :</i> Exécuter > Stopper le debuggage (Ctrl + Alt + F9)<br>
+                            <br>
+                            Note : les modules cités sont présents par défaut dans EduPython.
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleMoi">
+                        <h1>Mon rôle dans le projet</h1>
+                        <p>
+                            Tom m'a laissé diriger le projet.<br>
+                            Dans le cadre du Grand Oral de Terminal, il avait étudié les intelligences artificielles.<br>
+                            De mon côté, j'avais vu la vidéo de Laupok sur son IA jouant au jeu Super Mario World de Nintendo.<br>
+                            <br>
+                            J'ai proposé de nous fonder sur son travail. Mais ce n'était pas facile.<br>
+                            Comprendre le code de quelqu'un d'autre et comprendre un autre langage sur le tas n'est pas quelque chose d'évident.<br>
+                            Je parle plus en détail de mon travail de réadaptation dans notre rapport.<br>
+                            <br>
+                            Les connaissances de Tom ont été très importantes, et je suis certain que jamais sans lui on serait arrivé à un tel résultat.<br>
+                            Notre IA utilise un réseau de neurones, quelque chose d'assez complexe à appréhender.<br>
+                            Heureusement, il était là pour m'expliquer et me faire des remarques sur ma façon de résonner.<br>
+
+
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleExpWindows">
+                        <h1>Idées prévues mais abandonnées</h1>
+                        <p>
+                            Plusieurs choses ont été prévues, mais abandonnées par manque de temps.<br>
+                        </p>
+
+                        <h3 style="font-family: police_arial; margin-top: -20px;">1. Gestion à distance du générateur de réseaux de neurones</h3>
+                        <p>
+                            Afin d'être plus efficaces, j'avais l'idée de laisser mon ordinateur chercher le meilleur réseau de neurones
+                            et de suivre son avancée à distance.<br>
+                            Ainsi, depuis l'IUT, nous pouvions voir son avancé et tester les meilleurs réseaux et garder le meilleur.<br>
+                            <br>
+                            Pour cela, j'utilisais l'outil Microsoft OneDrive qui est synchronisé avec mon ordinateur.<br>
+                            De temps à autre, mon ordinateur créé dans son répertoire OneDrive le fichier correspondant au meilleur réseau de neurones trouvé.<br>
+                            Automatiquement, le fichier est synchronisé aux serveurs de Microsoft... Et donc accessible à distance !<br>
+                            <br>
+                            Le mécanisme était prêt et fonctionnel. Malheureusement, à cause des bugs, nous avons lancé la recherche d'IA à la dernière minute.<br>
+                            Cependant, il était également faisable par cette manière de contrôler plus ou moins à distance le générateur.<br>
+                        </p>
+
+                        <h3 style="font-family: police_arial; margin-top: -20px;">2. Le plan B de l'IA</h3>
+                        <p>
+                            Dans le cas où l'IA serait en difficulté, nous avons prévu que celle-ci s'adapte à la situation.<br>
+                            <br>
+                            Le scénario serait qu'elle suive les mouvements du meilleur joueur afin d'estimer quel était le meilleur moment pour partir.<br>
+                            <br>
+                            J'avais déjà imaginé comment il aurait pu fonctionner. Avec des exemples de la vie courante à la clé.<br>
+                        </p>
+
+                        <h3 style="font-family: police_arial; margin-top: -20px;">3. Le tournoi des réseaux de neurones</h3>
+                        <p>
+                            Nous avions une très grande liste des meilleurs réseaux de neurones trouvés par le générateur.<br>
+                            Tom a alors crée un fichier permettant de faire un tournoi pour ainsi nous permettre de récupérer le meilleur réseau.<br>
+                            <br>
+                            Malheureusement... Nous avons essayé le meilleur réseau... Et il était décevant.<br>
+                            Le réseau utilisé faisait de notre IA une IA peureuse !<br>
+                            <br>
+                            J'ai modifié le générateur et j'ai dû chercher à la main le meilleur réseau.<br>
+                            C'était un travail laborieux, il devait nous rester 2 heures avant de rendre le projet.<br>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Inspiration</h1>
+                        <p>
+                            Comme précisé plusieurs fois, notre projet se fonde sur celui de Laupok.<br>
+                            Nous avons utilisé son travail dans le but de générer le réseau de neurone.<br>
+                            Cependant, notre travail diffère du sien. Je vous invite à aller voir notre rapport pour en savoir plus.<br>
+                            <br>
+                            IA de Laupok :<br>
+                        </p>
+
+                            <ul>
+                                <li><p><a class="boutonPlusDInfo" href="https://www.youtube.com/watch?v=F63GNXGHVwM&ab_channel=Laupok" target="_blank">j'ai créé une IA qui joue à mario toute seule (YouTube)</a></p></li>
+                                <li><p><a class="boutonPlusDInfo" href="https://www.youtube.com/watch?v=u5xCl1bSe6o&ab_channel=Laupok" target="_blank">comment setup l'ia + code source review (YouTube)</a></p></li>
+                                <li><p><a class="boutonPlusDInfo" href="https://pastebin.com/Jcvdqhqm" target="_blank">code source de l'IA (Pastebin)</a></p></li>
+                            </ul>
+
+                        </p>
+                    </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+@media only screen and (min-width: 950px) {
+    #fondPresentationDuProjet {
+        position: fixed;
+        right: 8px;
+        top: 0;
+        bottom: 0;
+
+        background-color: black;
+        width: 300px;
+
+    }
+
+    #blocPresentationDuProjet {
+        position: absolute;
+        right: 8px;
+        top: 270px;
+
+        width: 300px;
+
+        z-index: 2;
+    }
+
+    #blocPresentationDuProjet h2 {
+        font-family: 'police_urbanjungle', serif;
+        letter-spacing : 2px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        overflow: hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+
+        position: relative;
+        left: 10px;
+        width: 280px;
+
+        margin-bottom: 10px;
+    }
+
+    #blocPresentationDuProjet img {
+        position: relative;
+
+        left: 10px;
+
+        width: 280px;
+        height: 160px;
+
+        margin-bottom: 10px;
+    }
+
+    #blocPresentationDuProjet iframe {
+        position: relative;
+
+        left: 10px;
+
+        width: 280px;
+        height: 160px;
+
+        margin-bottom: 10px;
+    }
+
+    #etatDuProjet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        bottom: 5px;
+        left: 10px;
+        width: 280px;
+
+        margin-bottom: -20px;
+    }
+
+    #etatDuProjet img {
+        width: 28px;
+        height: 28px;
+
+        position: relative;
+        left: -5px;
+    }
+
+    #langues {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        left: 10px;
+        width: 280px;
+
+        margin-bottom: -20px;
+    }
+
+    #langues img {
+        max-width: 32px;
+        max-height: 32px;
+        object-fit: contain;
+
+        position: relative;
+        top: 5px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    #etatDuProjet p {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+
+
+        position: relative;
+        left: 5px;
+        bottom: 2px;
+    }
+
+    #debutFinProjet {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        bottom: 50px;
+        left: 10px;
+        width: 280px;
+
+        margin-top: 60px;
+        margin-bottom: -20px;
+
+    }
+
+    .dateProjet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        position: relative;
+        margin-bottom: -40px;
+
+    }
+
+    .presentationADroite {
+        font-family: 'police_thenextfont', serif;
+        color: white;
+        background-color: black;
+        position: relative;
+        left: 5px;
+    }
+
+    #debutFinProjet p {
+        background-color: black;
+
+        position: relative;
+        left: 10px;
+        top: 2px;
+
+    }
+
+    .CategoriePresentationProjet {
+        text-align: center;
+        color: white;
+
+        position: relative;
+        left: 10px;
+        width: 280px;
+
+        margin-top: -10px;
+    }
+
+    .CategoriePresentationProjet h4 {
+        position: relative;
+    }
+
+    .CategoriePresentationliste {
+        text-align: start;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 32px;
+
+        color: white;
+    }
+
+    .CategoriePresentationliste > p {
+        margin-bottom: -15px;
+        padding-left: 10px;
+        background-color: black;
+    }
+
+    .CategoriePresentationliste > p > span {
+        font-family: 'police_icone', serif;
+        font-size: 12px;
+    }
+
+    .milieuListe {
+
+    }
+
+    .CategoriePresentationliste > a {
+        font-family: 'police_arial', serif;
+        color: white;
+
+        position: relative;
+        top: 12px;
+        margin-bottom: -8px;
+
+    }
+
+    #bodyPage {
+    }
+}
+
+@media only screen and (min-width: 1890px) {
+    #positionnementPresentationDuProjet{
+        position: relative;
+        left: 933px;
+        bottom: 191px;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    #fondPresentationDuProjet{
+        margin-left: 50%;
+        margin-right: 50%;
+        left: 625px;
+
+
+    }
+}

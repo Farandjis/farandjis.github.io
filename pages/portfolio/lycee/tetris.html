@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : Tetris</title>
+        <meta name="description" content="Projet de recréation de Tetris en Python à l'aide Pygame, avec un mode Tetris Hermine">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, projet python informatique, nsi sartrouville, nsi evariste galois, lycée évariste galois, projet nsi, tetris">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Jeu de blocs</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>Tetris</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="tetris/miniature.webp" alt="Miniature du projet Escape 98">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>01/02/2021</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Fin du projet :</h4>
+                            <p>12/02/2021</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langages</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                            <p>Yassine O.</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Linkieu/Tetris_Hermine.git" target="_blank">Voir la page GitHub</a>
+                            <a class="boutonPlusDInfo" href="tetris/sujet_projet_jeu_tetris.pdf" target="_blank">Voir l'énoncé du projet</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+
+                        <p>
+                            Après avoir commencé à apprendre le module Python "Pygame", nous devions recréer Tetris.<br>
+                            Le moteur graphique avait été déjà fait, nous devions créer les blocs, associer les touches,
+                            faire les déplacements.<br>
+                            Nous pouvions ajouter des fonctionnalités bonus en plus de ce qui était demandé, ce que j'ai fait bien sûr.<br>
+                            <br>
+                            C'était un projet très intéressant !<br>
+                            Tetris est l'un de mes jeux favoris avec Pokémon et Sonic, c'était un plaisir de découvrir le sujet.<br>
+                            <br>
+                            Vu que je connaissais le jeu, je connaissais ses mécaniques, il était facile pour moi d'imaginer la conception du jeu.<br>
+                            Malheureusement, ce n'était pas le cas de tous mes camarades.<br>
+                            Tetris est un jeu de casse-tête, il demande une certaine logique.<br>
+                            Il faut que les blocs descendent d'eux même, se figent dans la grille, prennent en compte les collisions...<br>
+                            Même si Tetris paraît très simpliste par rapport à un jeu comme The Legend of Zelda: Breath of the Wild, cela ne veut pas dire
+                            qu'il n'est pas complexe !<br>
+                            <br>
+                            Si j'avais des facilités, ce n'était pas le cas de mon camarade.<br>
+                            Apprendre pour reproduire ne lui posait aucun problème, mais devoir se projeter sur un programme lui était compliqué.<br>
+                            Il m'avait expliqué que lorsqu'on lui demandait de faire une fonction, il ne savait pas comment faire.<br>
+                            On n'a pas eu le choix concernant la composition du binôme, mais je trouve que travailler avec lui a été une très bonne expérience.<br>
+                            <br>
+                            Je dirigeais et je m'occupais de la partie complexe du projet.<br>
+                            Je répartissais les tâches en fonction de ses capacités, je lui demandais ce qu'il aimerait faire.<br>
+                            S'il rencontrait des difficultés, on y réfléchissait ensemble.<br>
+                            Je lui expliquais bien sur ce que je faisais en parallèle.<br>
+                            Si j'ai trouvé cette expérience très intéressante, c'est parce que lui expliquer m'a permis de mieux comprendre ce que je faisais.<br>
+                            Cela me permettait de prendre du recul. Et ses questions me permettaient de mieux cerner l'enjeu du projet.<br>
+                            Et par rapport à d'autres fois avec d'autres camarades, lui était impliqué dans le projet.<br>
+                            <br>
+                            Je pense que ce projet a été très enrichissant que ce soit de mon côté, ou du sien.<br>
+                            Je préfère être avec des personnes avec un niveau similaire par rapport au mien, mais parfois, c'est intéressant
+                            de faire le contraire. Et ce projet est un exemple.<br>
+                            <br>
+                            Note obtenu : 20/20
+                        </p>
+
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Fonctionnalités en plus</h1>
+
+                        <p>
+                            En plus de ce qui était demandé, nous avons ajouté les fonctionnalités suivantes :
+                        </p>
+
+                        <ul>
+                            <li><p>blocs colorés</p></li>
+                            <li><p>bloc 1x1</p></li>
+                            <li><p>Tableau des scores</p></li>
+                            <li><p>Système de sauvegarde des scores</p></li>
+                            <li><p>Mode "Tetris Hermine"</p></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Mode "Tetris Hermine"</h1>
+
+                        <p>
+                            Mister Flech est l'un de mes vidéastes favoris. Sur sa chaîne, il parle de jeux vidéo.<br>
+                            Dans certaines de ses émissions comme Reset System, il est accompagné d'Hermine,
+                            une chienne geek qui est la mascotte de sa chaîne.<br>
+                            <br>
+                            Dans son Reset System sur le jeu Tetris, un certain abonné (fictif) du nom de "Asgold" aurait créé
+                            plein de petit jeu issu de Tetris. Dont Tetris Hermine.<br>
+                            Le jeu n'existant pas, j'ai essayé de l'intégrer au sein de notre projet Tetris.<br>
+                            <br>
+                            C'est donc le mode 2 joueurs du projet.<br>
+                            L'un contrôle Hermine, et l'autre les blocs.<br>
+                            L'un doit chercher à emmêler l'autre pour qu'il perde, et l'autre doit l'éliminer pour gagner.<br>
+                            Et puis... Pourquoi pas un 3ᵉ joueur pour aider Hermine, aussi !<br>
+                            <br>
+                            <b>RESET SYSTEM #21 - Tetris (Mister Flech) :</b> <a class="boutonPlusDInfo" target="_blank" href="https://youtu.be/IV9it6tEpbM?t=964">https://youtu.be/IV9it6tEpbM?t=964</a><br>
+                            <b>Site internet de Mister Flech :</b> <a class="boutonPlusDInfo" target="_blank" href="https://misterflech.fr">https://misterflech.fr/</a><br>
+                            <br>
+                            <i>Hermine est un personnage fictif sous la propriété intellectuelle de Mister Flech.</i><br>
+                            <i>Le mode Tetris Hermine est une création d'un fan.</i>
+                        </p>
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Mode d'emploi et règles</h1>
+
+                        <p>
+                            <b>MODE TETRIS NORMAL :</b><br>
+                            Des blocs aléatoires descendent et l'objectif est de faire des lignes complètes de tetrominos.<br>
+                            On gagne 10 points si on arrive à placer un bloc, 100 points si on arrive à supprimer une ligne.<br>
+                            En revanche, si le jeu n'arrive plus à placer de nouveau tetromino, votre parti se termine.<br>
+                            Votre défi est donc de faire un maximum de point sans jamais atteindre le sommet !<br>
+                            Sachant que plus votre niveau augmente, plus le jeu va vite. Une limite de vitesse est mise à partir du niveau 7.<br>
+                            <br>
+                            Touches:<br>
+                            <u>Espace</u> : fait tourner le tetromino.<br>
+                            <u>Flèche Gauche (←)</u> : déplace le tetromino à gauche.<br>
+                            <u>Flèche Droite (→)</u> : déplace le tetromino à droite.<br>
+                            <u>Flèche Bas (↓)</u> : déplace le tetromino en bas.<br>
+                            <u>Flèche Haut (↑)</u> : mets en pause le jeu.<br>
+                            <br>
+                            <br>
+                            <b>MODE TETRIS HERMINE :</b><br>
+                            <u>Joueur 1</u> : joue à Tetris normalement et doit éliminer Hermine.<br>
+                            <u>Joueur 2</u> : contrôle Hermine, et dois essayer de survivre et de faire perdre le joueur 1 pour gagner.<br>
+                            <br>
+
+                            Le joueur 2 incarne Hermine (représenté par de 2 blocs de couleur vert clair).<br>
+                            Son objectif est de ne pas se faire éliminer.<br>
+                            Hermine peut se déplacer de gauche à droite, descendre ou monter de seulement un bloc.<br>
+                            Elle peut donc se faire bloquer !<br>
+                            <br>
+                            Dès que le joueur 1 pose son tetromino, le jeu considéra Hermine comme un tetromino à part entière durant un instant.<br>
+                            Durant ce laps de temps, le jeu va analyser s'il peut supprimer une ligne.<br>
+                            Si oui, et qu'Hermine est présente, Hermine meurt et le joueur 1 gagne.<br>
+                            En revanche, si Hermine résiste et que le joueur 1 perd avec un Game Over classique sur Tetris, Hermine gagne.<br>
+                            <br>
+                            Les touches de déplacements des tetrominos reste les mêmes, tout comme la touche pause.<br>
+                            <br>
+                            Contrôle d'Hermine :<br>
+                            <u>Touche A (Q)</u> : déplace Hermine vers la gauche.<br>
+                            <u>Touche Z (W)</u> : déplace Hermine vers la droite.<br>
+                            <br>
+                            <b>Remarque :</b> il est possible que vous deviez utiliser les touches Q/W plutôt que A/Z.
+                        </p>
+                    </div>
+
+                    <div class="encartArticle" id="fondArticleLancer">
+                        <h1>Lancer le projet</h1>
+
+                        <p>
+                            <b>Modules utilisés :</b>
+                        </p>
+                        <ul>
+                            <li><p>Tkinter</p></li>
+                            <li><p>Pygame</p></li>
+                            <li><p>Random</p></li>
+                            <li><p>Copy</p></li>
+                            <li><p>Time</p></li>
+                        </ul>
+                        <p>
+                            <b>Pour lancer le projet</b>, importer puis exécuter le fichier <b>jeu_eleves.py</b>.<br>
+                            <br>
+                            Le projet a été créé avec l'IDE Spyder (Ananconda).<br>
+                            Si vous n'avez pas de programme pour lancer le projet Python, vous pouvez installer l'IDE <a class="boutonPlusDInfo" href="https://edupython.tuxfamily.org/documentation-sauvegarde/index0ea0.html?title=Installation_et_Configuration" target="_blank">EduPython</a>.<br>
+                            Je recommande EduPython si vous souhaitez tester le projet sans vous embêter avec l'installation des modules ou de Python.<br>
+                            <br>
+                            <br>
+                            <b>Sur EduPython:</b><br>
+                            <i>Importer :</i> Fichier > Ouvrir > jeu_eleves.py<br>
+                            <i>Lancer le jeu :</i> Exécuter > Exécuter (Ctrl + F9)<br>
+                            <i>Arrêter le jeu :</i> Exécuter > Stopper le debuggage (Ctrl + Alt + F9)<br>
+                            <br>
+                            Les modules sont déjà présents au sein d'EduPython.<br>
+                            Note : Le projet semble ne plus correctement fonctionné sur Spyder étonnamment.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <a href="tetris/highscore.webp" target="_blank"><img src="tetris/highscore.webp" alt="Image du mode Tetris avec la boîte de dialogue demandant le pseudo du joueur pour le tableau des scores"></a>
+                            <a href="tetris/hermine.webp" target="_blank"><img src="tetris/hermine.webp" alt="Image du mode Tetris Hermine. Hermine se trouve sur un tas de tetrominos avec un nouveau qui tombe."></a>
+                            <a href="tetris/ville_atomiser.webp" target="_blank"><img title="Capture du jeu en développement. On dirait une ville avec des immeubles qui ont été atomisés. On dirait qu'une nouvelle bombe tombe d'ailleurs." src="tetris/ville_atomiser.webp" alt="Une capture durant la création du projet. La position des tetrominos laisse imaginer une ville détruite."></a>
+
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

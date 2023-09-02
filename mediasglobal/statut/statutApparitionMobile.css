@@ -1,0 +1,84 @@
+@media only screen and (min-width: 781px) {
+    .ouvrir{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    /* Bouton affichant le statut*/
+    .ouvrir{
+        position: absolute;
+        top:70px;
+
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-top : 20px solid black;
+        border-right : 20px solid transparent;
+        border-left : 20px solid transparent;
+    }
+
+    /* Bouton esthétique sous le statut*/
+    .refermer{
+        position: absolute;
+        top:80px;
+
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-top : 20px solid black;
+        border-right : 20px solid transparent;
+        border-left : 20px solid transparent;
+    }
+
+    /*élément "Statut_haut" quand le bouton "afficher statut" a été cliqué*/
+    .HautCSS .ouvrir:active + .statut_haut {
+        width: 269px;
+        height: 80px;
+        visibility: visible;
+
+        position: absolute;
+        top: 70px;
+
+    }
+
+    /*quand le bouton "afficher statut" a été cliqué*/
+    .ouvrir:active{
+        visibility: hidden;
+    }
+
+    /*élément "Statu_hautt" quand on le touche*/
+    .HautCSS .statut_haut:hover {
+        width: 269px;
+        height: 65px;
+        visibility: visible;
+
+        position: absolute;
+        top: 70px;
+    }
+
+    .refermer{
+        visibility: hidden;
+    }
+
+
+    .HautCSS .statut_haut:hover + .refermer{
+        z-index: -1;
+        animation-name: ouvrir;
+        animation-duration: 0.8s;
+        animation-fill-mode: forwards;
+        visibility: visible;
+
+    }
+}
+
+@keyframes ouvrir {
+
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(54px);
+    }
+}

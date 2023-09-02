@@ -1,0 +1,230 @@
+@media only screen and (min-width: 780px){
+    html{
+        clip-path: polygon(0 0, 115% 140px, 200% 200%, 0% 100%);
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 1430px){
+    h1 {
+        font-family: 'police_montserrat', serif;
+        color: white;
+        background-color: #fc8a01;
+        max-width: 190px;
+    }
+
+    h5 {
+        font-family: 'police_montserrat', serif;
+        font-weight: normal;
+
+        position: relative;
+        bottom: 25px;
+    }
+
+    img{
+        max-width: 33px;
+        max-height: 33px;
+
+        position: absolute;
+        margin-bottom: auto;
+        margin-top: auto;
+        padding-left: 2px;
+        padding-top: 2px;
+    }
+
+    a:hover img{
+        animation-duration: 0.5s;
+        animation-name: AnimationSelectionCoordonnes;
+        animation-fill-mode: forwards;
+    }
+
+    a:not(hover) img{
+        animation-duration: 0.5s;
+        animation-name: AnimationDeselectionCoordonnes;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes AnimationSelectionCoordonnes{
+
+        to {
+            max-width: 38px;
+            max-height: 38px;
+            padding-left: 0;
+            padding-top: 0;
+        }
+    }
+
+    @keyframes AnimationDeselectionCoordonnes{
+        from {
+            max-width: 38px;
+            max-height: 38px;
+            padding-left: 0;
+            padding-top: 0;
+        }
+        to {
+            max-width: 33px;
+            max-height: 33px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }
+    }
+
+    /* --- Le tableau --- */
+    table {
+
+        margin-left: 20%;
+        /*margin-left: auto;*/
+        margin-right: auto;
+
+        /*border:1px solid black;*/
+        table-layout: fixed;
+        width: 80%;
+
+        position: relative;
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    td > div > a {
+        color: black;
+    }
+
+    h2 {
+        font-family: 'police_montserrat', serif;
+        color: black;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        left: 45px;
+    }
+
+    p {
+        font-size: 15px;
+        color: black;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        bottom: 5px;
+        left: 45px;
+
+        margin-right: 50px;
+
+    }
+
+    #courriel {
+        font-family: 'police_arial', serif;
+        font-size: 15px;
+        color: black;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        bottom: 5px;
+        left: 45px;
+    }
+}
+
+@media only screen and (min-width: 1430px){
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        right: 620px;
+
+        font-family: 'police_montserrat', serif;
+        color: white;
+        font-size: 35px;
+
+        background-color: #fc8a01;
+        max-width: 190px;
+
+    }
+
+    h5 {
+        font-family: 'police_montserrat', serif;
+        font-weight: normal;
+
+        position: relative;
+        bottom: 25px;
+    }
+
+    img {
+        max-width: 45px;
+        max-height: 45px;
+
+        position: absolute;
+        margin-bottom: auto;
+        margin-top: auto;
+
+        padding-left: 2px;
+
+
+    }
+
+    /* --- Le tableau --- */
+    table {
+
+        margin-left: 20%;
+        /*margin-left: auto;*/
+        margin-right: auto;
+
+        /*border:1px solid black;*/
+        table-layout: fixed;
+        width: 80%;
+
+        position: relative;
+
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    td > div > a {
+        color: black;
+    }
+
+    h2 {
+        font-family: 'police_montserrat', serif;
+        color: black;
+        font-size: 25px;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        left: 55px;
+    }
+
+    p {
+        font-size: 17px;
+        color: black;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        bottom: 5px;
+        left: 55px;
+
+        margin-right: 50px;
+
+    }
+
+    #courriel {
+        font-family: 'police_arial', serif;
+        font-size: 17px;
+        color: black;
+
+        position: relative;
+        margin-bottom: auto;
+        margin-top: auto;
+        bottom: 5px;
+        left: 55px;
+    }
+}

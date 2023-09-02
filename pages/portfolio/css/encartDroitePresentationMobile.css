@@ -1,0 +1,244 @@
+@media only screen and (max-width: 950px) {
+
+    #positionnementPresentationDuProjet{
+        position: relative;
+        /*bottom: 520px;*/
+        margin-top: -520px;
+        right: 20px;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #fondPresentationDuProjet {
+        position: relative;
+        bottom: 100px;
+
+        background-color: black;
+        width: 100%;
+        height: 400px;
+
+    }
+
+    #blocPresentationDuProjet {
+        position: relative;
+
+        top: 120px;
+
+        width: 310px;
+
+        z-index: 2;
+
+    }
+
+    #blocPresentationDuProjet hr{
+        display: none;
+    }
+
+    #blocPresentationDuProjet h2 {
+        font-family: 'police_urbanjungle', serif;
+        letter-spacing : 2px;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        overflow: hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+
+        position: relative;
+        width: 160px;
+        left: 10px;
+
+        margin-bottom: 10px;
+    }
+
+    #blocPresentationDuProjet h4{
+        font-size: 15px;
+    }
+
+    #blocPresentationDuProjet p{
+        font-size: 13px;
+    }
+
+    #blocPresentationDuProjet img {
+        position: relative;
+
+        left: 10px;
+
+        width: 150px;
+        height: 80px;
+
+        margin-bottom: 10px;
+    }
+
+    #blocPresentationDuProjet iframe {
+        position: relative;
+
+        left: 10px;
+
+        width: 150px;
+        height: 80px;
+
+        margin-bottom: 10px;
+    }
+
+    #etatDuProjet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        bottom: 18px;
+        right: 45px;
+        width: 280px;
+
+        margin-bottom: -40px;
+    }
+
+    #etatDuProjet img {
+        width: 16px;
+        height: 16px;
+
+        position: relative;
+        left: -5px;
+    }
+
+
+    #etatDuProjet p {
+        font-size: 15px;
+        color: white;
+        background-color: black;
+
+        position: relative;
+        bottom: 5px;
+    }
+
+    #langues {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        right: 12px;
+        bottom: 10px;
+        width: 200px;
+
+        margin-bottom: -40px;
+    }
+
+    #langues img {
+        max-width: 16px;
+        max-height: 16px;
+        object-fit: contain;
+
+        position: relative;
+        top: 4px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    #debutFinProjet {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+
+        position: relative;
+        bottom: 60px;
+        left: 12px;
+
+        width: 150px;
+
+        margin-top: 60px;
+        margin-bottom: -20px;
+
+    }
+
+    .dateProjet {
+        text-align: center;
+        color: white;
+        position: relative;
+        margin-bottom: -50px;
+
+    }
+
+    .presentationADroite {
+        font-family: 'police_thenextfont', serif;
+        color: white;
+        background-color: black;
+        position: relative;
+        left: 5px;
+    }
+
+    #debutFinProjet p {
+        background-color: black;
+
+        position: relative;
+        left: 5px;
+        bottom: 20px;
+
+    }
+
+    .CategoriePresentationProjet {
+        text-align: center;
+        color: white;
+
+        position: relative;
+        left: 175px;
+        bottom: 218px;
+        width: 180px;
+
+        margin-top: -30px;
+    }
+
+    .CategoriePresentationProjet h4 {
+        position: relative;
+        width: 160px;
+    }
+
+    .CategoriePresentationliste {
+        text-align: start;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 32px;
+        right: 10px;
+
+        color: white;
+    }
+
+    .CategoriePresentationliste > p {
+        margin-bottom: -15px;
+        padding-left: 10px;
+        background-color: black;
+    }
+
+    .CategoriePresentationliste > p > span {
+        font-family: 'police_icone', serif;
+        font-size: 12px;
+    }
+
+    .milieuListe {
+
+    }
+
+    .CategoriePresentationliste > a {
+        font-family: 'police_arial', serif;
+        font-size: 13px;
+        color: white;
+
+        position: relative;
+        top: 12px;
+        padding-left: 10px;
+
+
+    }
+
+    #bodyPage {
+    }
+}

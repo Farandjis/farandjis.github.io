@@ -1,0 +1,9 @@
+.milieuEtVertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.milieuEtVertical > h1{
+    font-family: 'police_thenextfont', serif;
+}
