@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : Editeur Pymon Rouge</title>
+        <meta name="description" content="Un éditeur de map pour un projet de Pokémon mais en Python">
+        <meta name="keywords" content="matthieu farandjis, iut de vélizy, étudiant en informatique, étudiant en but informatique, étudiant à sartrouville, développeur web, site internet de matthieu farandjis, projet python informatique, nsi sartrouville, nsi evariste galois, lycée évariste galois, projet nsi, tetris">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe class="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe class="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Analyser de Pixel-Art</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>PyPixel</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="pypixelart/miniature.webp" alt="Miniature temporaire du projet PyPixelArt. Il illustre le résultat avec un pixel-art icône d'installation Windows 95">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/encours.webp" alt="Icone représentant l'état du projet">
+                        <p>En cours</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>07/08/2023</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langages</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a>Ce projet n'est pas disponible en téléchargement.</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+
+                        <p>
+                            PyPixelArt est un programme Python permettant de décrire un Pixel-Art, de réduire ou réajuster sa palette de couleur.<br>
+                            <br>
+                            Ce programme permet d'aider ceux qui recréaient en vrai des Pixel-Art à l'aide de perles de couleurs.<br>
+                            Si nous avons peu de perles et/ou peu de coloris par exemple, plus besoin de compter fastidieusement un à un chaque case du Pixel-Art : PyPixelArt s'en occupe !<br>
+                            <br>
+                            A terme, j'aimerais recréer ce programme en C++ afin d'avoir simplement un .exe plus intuitif à lancer qu'un script Python. La version C++ aura une interface graphique avec Qt.<br>
+                            <br>
+                            <br>
+                            Les pixel-art utilisés ne m'appartiennent pas, ils ont été trouvés sur internet. Je les utilise uniquement pour mes tests privés et personnels.<br>
+                            Ces images ne sont que des exemples de résultats de tests.<br>
+
+                        </p>
+
+                    </div>
+
+                    <div class="encartArticle">
+                        <h1>Le 10/02/2023</h1>
+
+                        <p>
+                            Actuellement, le programme est capable de détecter si un pixel-art possède ou non un quadrillage.<br>
+                            Il peut également déterminer les cases uniquement si tous les pixels de la case ont la même couleur RVB, son niveau de tolérance étant à 0.<br>
+                            Son niveau de tolérance est également à 0 lorsqu'il répertorie le nombre de pixels pour chaque couleur. Une différence d'1 bit sur une teinte équivaut pour lui à une couleur différente.<br>
+                            <br>
+                            Son efficacité est donc limitée à un certain nombre de pixel-art pour le moment.<br>
+                            Actuellement, les résultats sont sauvegardés sous forme d'une image. Pour les images ci-dessous, j'ai intégré le résultat aux images d'essais.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <a href="pypixelart/img/exemple_pikachu.webp" target="_blank"><img src="pypixelart/img/exemple_pikachu.webp" alt="Pixel-Art Pikachu, quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case"></a>
+                            <a href="pypixelart/img/exemple_installation.webp" target="_blank"><img src="pypixelart/img/exemple_installation.webp" alt="Pixel-Art icône d'installation Windows 95, non quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case"></a>
+                            <a href="pypixelart/img/exemple_naruto.webp" target="_blank"><img src="pypixelart/img/exemple_naruto.webp" alt="Pixel-Art Naruto, quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case"></a>
+                            <a href="pypixelart/img/exemple_oiseau.webp" target="_blank"><img src="pypixelart/img/exemple_oiseau.webp" alt="Pixel-Art d'un oiseau, quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case"></a>
+                            <a href="pypixelart/img/exemple_sonic.webp" target="_blank"><img src="pypixelart/img/exemple_sonic.webp" alt="Pixel-Art Sonic avec une ligne vertical et une ligne horizontal noir, quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case. On remarque la mauvaise gestion de la teinte noir à cause des codes RVB différents"></a>
+                            <a href="pypixelart/img/exemple_dracaufeu_x.webp" target="_blank"><img src="pypixelart/img/exemple_dracaufeu_x.webp" alt="Pixel-Art Mega Dracaufeu X, non quadrillé, avec pour chaque couleur de sa palette de couleur, son nombre de case. On remarque l'absence de tolérance entre les différentes teintes de couleurs."></a>
+
+
+                        </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
