@@ -29,6 +29,7 @@ p {
     animation-name: animFleche;
 }
 
+/*
 @keyframes defilement {
     0%,
     10%{
@@ -67,3 +68,4 @@ p {
         transform: translateX(300px);
     }
 }
+*/
