@@ -1,6 +1,5 @@
 
 .fond_et_bord{
-    /*     background-color: lightskyblue;*/
     background-color: white;
     height: 50px;
     border: 2px solid black;
@@ -16,53 +15,93 @@
     justify-content: center;
 }
 
-/* animation:emptyanim;*/
+
 
 img{
+    width: 39px;
+    position: relative;
+    top: 65px; left: 2px;
+    overflow: hidden;
+    border-radius: 8px;
+}
 
-    width: 48px;
-    height: 100%;
 
-    animation-duration: 0.5s;
-    animation-name: glissementCacheTitre;
-    padding: 0 5px 5px 5px;
+
+.unBoutonMenu{
+    position: relative;
+    bottom: 60px;
+
+    margin-left: 5px;
+    margin-right: 5px;
 
 
 }
 
-img:hover{
-    animation-duration: 0.5s;                           /*Durée de l'animation*/
+.unBoutonMenu:hover{
+
+
+}
+
+h2{
+    font-family: 'police_montserrat';
+    color: #fc8a01;
+
+    padding: 5px 10px 5px 40px;
+
+    border: 2px solid #fdd601;
+    border-radius: 10px;
+
+    background-image: url("icones/trait_fond_icone.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    background-size: 68px;
+
+    animation-duration: 0.4s;
+    animation-name: glissementCacheTitre;
+
+}
+
+h2:hover, img:hover + h2{
+    background-color : #fff8da;
+    animation-duration: 0.4s;                           /*Durée de l'animation*/
     animation-name: glissementLibereTitre;              /*Active l'animation*/
     animation-fill-mode: forwards;                      /*Reste à l'affichage de la fin de l'anim*/
-    background-size: 260px 55px;
-    background-position-y: -2px;
+
 }
 
-.accueil:hover{ background-image: url(icones/clique/accueil.png); }
-.presentation:hover{ background-image: url(icones/clique/presentation.png); }
-.portfolio:hover{ background-image: url(icones/clique/portfolio.png); }
-.meContacter:hover{ background-image: url(icones/clique/meContacter.png); }
-.cv:hover{ background-image: url(icones/clique/cv.png); }
-.inconnu:hover{ background-image: url(icones/clique/inconnu.png); }
-.youtube:hover{ background-image: url(icones/clique/youtube.png); }
+a:not(:hover){
+    text-decoration: none; /* Virer le soulignage du lien*/
+}
+
+a:hover{
+    text-decoration-color: #fc8a01;
+}
+
+
+
 
 @keyframes glissementLibereTitre {
     from {
-        padding: 0 5px 5px 5px;
+        padding-left: 40px;
+        padding-right: 10px;
     }
 
     to {
-        padding: 0 207px 5px 10px;
+        padding-left: 43px;
+        padding-right: 13px;
     }
 }
 
 @keyframes glissementCacheTitre {
     from {
-        padding: 0 207px 5px 10px;
+        padding-left: 43px;
+        padding-right: 13px;
     }
 
     to {
-        padding: 0 5px 5px 5px;
+        padding-left: 40px;
+        padding-right: 10px;
 
     }
 }
