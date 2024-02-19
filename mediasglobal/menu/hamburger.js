@@ -15,8 +15,8 @@ function hamburger() {
     var iframe = documentParent.getElementsByClassName("menu_haut").item(0);
     var hautCSS = documentParent.getElementsByClassName("HautCSS").item(0);
     if (iframe.getAttribute("style") == null) {
-        iframe.setAttribute("style", "height: " + nbDeBoutonDuMenuHaut*53 + "px;");
-        hautCSS.setAttribute("style", "top: " + nbDeBoutonDuMenuHaut*26 + "px;");
+        iframe.setAttribute("style", "height: " + (80 + nbDeBoutonDuMenuHaut*53) + "px;");
+        hautCSS.setAttribute("style", "top: " + (40 + nbDeBoutonDuMenuHaut*26) + "px;");
     }
     else {
         iframe.removeAttribute("style");

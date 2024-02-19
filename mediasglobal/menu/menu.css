@@ -188,6 +188,8 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 
     nav .hamburger-menu {
         display: block;
+        left: 0;
+        margin-left: 10px;
     }
 
     nav .fond_et_bord {
@@ -199,8 +201,7 @@ nav .hamburger-menu.active .slice:nth-child(3) {
     nav.active .fond_et_bord{
         position: relative;
 
-        margin: 15px;
-        margin-right: 100px;
+        margin-left: 5px;
 
         display: block;
 
@@ -209,6 +210,7 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 
     .unBoutonMenu{
         justify-content: stretch;
+        margin-bottom: -10px;
     }
 
     h2{
@@ -218,6 +220,10 @@ nav .hamburger-menu.active .slice:nth-child(3) {
     nav.active .centrer{
         display: block;
         align-content: start;
+        animation-duration: 0.5s;                           /*Durée de l'animation*/
+        animation-name: deroulementMenu;              /*Active l'animation*/
+        animation-fill-mode: forwards;                      /*Reste à l'affichage de la fin de l'anim*/
+
 
     }
 
@@ -228,6 +234,19 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 
     #fermer_pop-up{
         right: 0px;
-
     }
+
+    @keyframes deroulementMenu {
+        from {
+            position: relative;
+            top: -200px;
+        }
+
+        to {
+            position: relative;
+            top: 40px;
+
+        }
+    }
+
 }
