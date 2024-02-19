@@ -1,4 +1,4 @@
-@media (min-width: 928px) {
+@media (min-width: 780px) {
     .fond_et_bord {
         background-color: white;
         height: 50px;
@@ -184,12 +184,14 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 
 /* ======================================================================================== */
 
-@media (max-width: 928px) {
+@media (max-width: 780px) {
 
     nav .hamburger-menu {
         display: block;
-        left: 0;
-        margin-left: 10px;
+        margin-left: 50%;
+        margin-right: 50%;
+
+        right: 120px;
     }
 
     nav .fond_et_bord {
@@ -244,7 +246,7 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 
         to {
             position: relative;
-            top: 40px;
+            top: 50px;
 
         }
     }

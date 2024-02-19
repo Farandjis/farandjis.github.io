@@ -16,7 +16,7 @@ function hamburger() {
     var hautCSS = documentParent.getElementsByClassName("HautCSS").item(0);
     if (iframe.getAttribute("style") == null) {
         iframe.setAttribute("style", "height: " + (80 + nbDeBoutonDuMenuHaut*53) + "px;");
-        hautCSS.setAttribute("style", "top: " + (40 + nbDeBoutonDuMenuHaut*26) + "px;");
+        hautCSS.setAttribute("style", "top: " + (42 + nbDeBoutonDuMenuHaut*26) + "px;");
     }
     else {
         iframe.removeAttribute("style");

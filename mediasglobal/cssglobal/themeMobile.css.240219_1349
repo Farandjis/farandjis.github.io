@@ -1,5 +1,15 @@
 /*Affichage sur mobile*/
 @media only screen and (max-width: 780px) {
+/*
+    .HautCSS .statut_haut {
+        width: 269px;
+        height: 65px;
+        visibility: visible;
+
+        position: absolute;
+        top: 0px;
+    }
+    */
 
     #contenuPage{
         margin-top: 50px;
@@ -109,7 +119,7 @@
     }
 
     iframe{
-        border: none;
+        /*border: none;*/
     }
 
 
@@ -122,16 +132,15 @@
 
     .HautCSS .statut_haut {
         position: absolute;
-
+        top: 79px;
 
         width: 269px;
         height: 80px;
-        margin-left: 50px;
-        top: 7px;
 
-        visibility: visible;
+        visibility: hidden;
 
     }
+
 
     .titrePage{
         z-index: 1;
