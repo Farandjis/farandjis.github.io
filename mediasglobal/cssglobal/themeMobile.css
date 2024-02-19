@@ -33,10 +33,13 @@
 
 
     .fondMenuSticky{
-        background-color: #fc8a01;
         height: 80px;
+        /*
+        background-color: #fc8a01;
         border-radius: 0px 0px 10px 10px;
         opacity: 0.5;
+
+         */
     }
 
     .blocFondPage1{
@@ -99,8 +102,10 @@
         top: 40px;
         left: 49.7%;
         transform: translate(-50%, -50%);
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgba(252, 138, 1, 0.5);
 
-        width:99.8%;
+        width:101%;
     }
 
     iframe{
@@ -109,6 +114,7 @@
 
 
     .HautCSS > .menu_haut {
+        position: relative;
         width: 770px;
         height: 80px;
     }

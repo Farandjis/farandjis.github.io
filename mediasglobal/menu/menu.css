@@ -1,53 +1,45 @@
+@media (min-width: 928px) {
+    .fond_et_bord {
+        background-color: white;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px 5px 5px 5px;
+        overflow: hidden;
 
-.fond_et_bord{
-    background-color: white;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    overflow: hidden;
+    }
 
-}
-
-.centrer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .centrer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 
 
 img{
     width: 39px;
-    position: relative;
-    top: 65px; left: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
     overflow: hidden;
     border-radius: 8px;
+    z-index: 1; /*L'img devant le titre h2*/
 }
 
-
+a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .unBoutonMenu{
     position: relative;
-    bottom: 60px;
-
-    margin-left: 5px;
-    margin-right: 5px;
-
-
-}
-
-.unBoutonMenu:hover{
-
-
-}
-
-h2{
-    font-family: 'police_montserrat';
-    color: #fc8a01;
+    top: 4px;
 
     padding: 5px 10px 5px 40px;
-
     border: 2px solid #fdd601;
     border-radius: 10px;
 
@@ -57,12 +49,30 @@ h2{
     background-position-x: left;
     background-size: 68px;
 
+    background-color: white;
+
     animation-duration: 0.4s;
     animation-name: glissementCacheTitre;
+}
+
+.unBoutonMenu:hover{
+
 
 }
 
-h2:hover, img:hover + h2{
+h2{
+    position: relative;
+    font-family: 'police_montserrat';
+    color: #fc8a01;
+    z-index: 0; /*L'img devant le titre h2*/
+
+
+    display: inline; /*Supprime cette marge maudite causé par le h2*/
+
+
+}
+
+.unBoutonMenu:hover{
     background-color : #fff8da;
     animation-duration: 0.4s;                           /*Durée de l'animation*/
     animation-name: glissementLibereTitre;              /*Active l'animation*/
@@ -102,6 +112,122 @@ a:hover{
     to {
         padding-left: 40px;
         padding-right: 10px;
+
+    }
+}
+
+
+/* ======================= HAMBURGER ===================================== */
+
+nav .hamburger-menu{
+
+    display: none;
+
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+    padding-bottom: 40px;
+
+    width: 40px;
+
+    cursor: pointer;
+
+}
+
+nav .hamburger-menu .slice {
+
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+
+    background: #000;
+    border-radius: 4px;
+
+
+    transition: all 0.5s ease-in-out;
+
+}
+
+nav .hamburger-menu .slice:nth-child(1) {
+
+    top: 0px;
+
+}
+nav .hamburger-menu .slice:nth-child(2) {
+
+    top: 15px;
+
+}
+nav .hamburger-menu .slice:nth-child(3) {
+
+    top: 30px;
+
+}
+
+nav .hamburger-menu.active .slice:nth-child(1) {
+    top: 12px;
+    transform: rotate(135deg);
+
+}
+nav .hamburger-menu.active .slice:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+
+}
+nav .hamburger-menu.active .slice:nth-child(3) {
+    top: 12px;
+    transform: rotate(-135deg);
+
+}
+
+/* ======================================================================================== */
+
+@media (max-width: 928px) {
+
+    nav .hamburger-menu {
+        display: block;
+    }
+
+    nav .fond_et_bord {
+        display: none;
+
+        transition: 1s;
+    }
+
+    nav.active .fond_et_bord{
+        position: relative;
+
+        margin: 15px;
+        margin-right: 100px;
+
+        display: block;
+
+        transition: 0.5s;
+    }
+
+    .unBoutonMenu{
+        justify-content: stretch;
+    }
+
+    h2{
+        width: 100%;
+    }
+
+    nav.active .centrer{
+        display: block;
+        align-content: start;
+
+    }
+
+    nav.active .fond_et_bord{
+        background: none;
+        border: none;
+    }
+
+    #fermer_pop-up{
+        right: 0px;
 
     }
 }
