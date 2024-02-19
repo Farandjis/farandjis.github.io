@@ -1,4 +1,4 @@
-@media (min-width: 780px) {
+@media only screen and (min-width: 780px) {
     .fond_et_bord {
         background-color: white;
         height: 50px;
@@ -13,8 +13,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
     }
+
+    nav .hamburger-menu {
+        display: none;
+    }
+
+
 }
 
 
@@ -119,21 +124,7 @@ a:hover{
 
 /* ======================= HAMBURGER ===================================== */
 
-nav .hamburger-menu{
 
-    display: none;
-
-    position: absolute;
-    top: 25px;
-    right: 10px;
-
-    padding-bottom: 40px;
-
-    width: 40px;
-
-    cursor: pointer;
-
-}
 
 nav .hamburger-menu .slice {
 
@@ -144,7 +135,6 @@ nav .hamburger-menu .slice {
 
     background: #000;
     border-radius: 4px;
-
 
     transition: all 0.5s ease-in-out;
 
@@ -183,16 +173,31 @@ nav .hamburger-menu.active .slice:nth-child(3) {
 }
 
 /* ======================================================================================== */
-
-@media (max-width: 780px) {
+/*
+@media only screen and (min-width: 780px) and (max-width: 850px){
 
     nav .hamburger-menu {
+        display: none;
+
+        position: absolute;
+        top: 25px;
+        right: 160px;
+
+        padding-bottom: 40px;
+
+        width: 40px;
+
+        cursor: pointer;
+
         display: block;
         margin-left: 50%;
         margin-right: 50%;
-
-        right: 120px;
     }
+}
+*/
+
+
+@media only screen and (max-width: 780px) {
 
     nav .fond_et_bord {
         display: none;
@@ -251,4 +256,21 @@ nav .hamburger-menu.active .slice:nth-child(3) {
         }
     }
 
+}
+
+@media only screen and (max-width: 780px) {
+    nav .hamburger-menu {
+
+        position: absolute;
+        left: 15px; top: 25px;
+
+        padding-bottom: 40px; /* Pour que la zone cliquable s'étend sur les 3 barres*/
+
+        width: 40px;
+
+        cursor: pointer;
+
+        display: block;
+;
+    }
 }

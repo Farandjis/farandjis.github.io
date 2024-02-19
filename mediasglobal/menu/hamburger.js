@@ -16,11 +16,15 @@ function hamburger() {
     var hautCSS = documentParent.getElementsByClassName("HautCSS").item(0);
     if (iframe.getAttribute("style") == null) {
         iframe.setAttribute("style", "height: " + (80 + nbDeBoutonDuMenuHaut*53) + "px;");
-        hautCSS.setAttribute("style", "top: " + (42 + nbDeBoutonDuMenuHaut*26) + "px;");
+        iframe.setAttribute("id", "iframeMenuGrand");
+        hautCSS.setAttribute("style", "margin-top: " + (1 + nbDeBoutonDuMenuHaut*26) + "px;");
+        hautCSS.setAttribute("id", "hautCSSMenuGrand");
     }
     else {
         iframe.removeAttribute("style");
+        iframe.removeAttribute("id")
         hautCSS.removeAttribute("style");
+        hautCSS.removeAttribute("id");
     }
 
 }
