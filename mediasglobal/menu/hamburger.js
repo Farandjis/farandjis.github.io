@@ -6,6 +6,14 @@ function hamburger() {
     btnToggleNav.classList.toggle("active");
 
     // --- mon code
+    var menuHamburger = document.getElementsByClassName("hamburger-menu").item(0);
+    if (menuHamburger.getAttribute("class") == "hamburger-menu active"){
+        menuHamburger.setAttribute("aria-label","Refermer le menu de navigation avec la touche ENTRÉE.");
+    }
+    else {
+        menuHamburger.setAttribute("aria-label","Ouvrir le menu de navigation avec la touche ENTRÉE.");
+    }
+
 
     // Accéder au document de la page parente
     var documentParent = parent.document;
