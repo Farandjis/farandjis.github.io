@@ -28,7 +28,7 @@ p {
     animation-timing-function: steps(5, end);
     animation-name: animFleche;
 }
-/*
+
 @keyframes defilement {
     0%,
     10%{
@@ -67,4 +67,3 @@ p {
         transform: translateX(300px);
     }
 }
-*/
