@@ -1,6 +1,6 @@
 /*Affichage sur ordinateur*/
 @media only screen and (min-width: 1064px) {
-    #iframeMenuGrand{
+    .iframeMenuGrand{
         max-height: 80px;
     }
 
@@ -129,14 +129,14 @@
         border: none;
     }
 
-    .HautCSS > .menu_haut {
+    .HautCSS > #menu_haut {
         position: relative;
 
         width: 1068px;
         height: 80px;
     }
 
-    .HautCSS > .statut_haut {
+    .HautCSS > #statut_haut {
         position: relative;
         top: 7px;
         right: 1px;
@@ -211,7 +211,7 @@
 /*
 @media only screen and (min-width: 780px) and (max-width: 900px){
 
-    .HautCSS > .menu_haut {
+    .HautCSS > #menu_haut {
         position: absolute;
         top:-10px;
         width: 100%;

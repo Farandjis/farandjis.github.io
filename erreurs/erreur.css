@@ -34,7 +34,7 @@
         z-index: 3;
     }
 
-    .encartErreur > .statut_haut {
+    .encartErreur > #statut_haut {
         position: relative;
         top: 10px;
     }
@@ -102,7 +102,7 @@
 
     }
 
-    .statut_haut {
+    #statut_haut {
         position: absolute;
         top: 120px;
     }

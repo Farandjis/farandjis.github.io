@@ -1,69 +1,77 @@
-
-p {
-    z-index: 2;
-    position: relative;
-    right: -6px;
-
-    animation-iteration-count: infinite;
-    animation-duration: 25s;
-    animation-name: defilement;
-    column-count: 10;
-    column-rule: 1px solid black;
-
-    column-width: 119px;
-
-
-}
-
-.flecheStatut{
-    z-index: 1;
-    position: absolute;
-    top: 20px;
-    left: -5px;
-    height: 40px;
-
-    animation-iteration-count: infinite;
-    animation-duration: 25s;
-    /*animation-timing-function: linear;*/
-    animation-timing-function: steps(5, end);
-    animation-name: animFleche;
-}
-
-@keyframes defilement {
-    0%,
-    10%{
+ p {
+        z-index: 2;
         position: relative;
-        right: -9px;
+        right: -6px;
+
+        animation-iteration-count: infinite;
+        animation-duration: 25s;
+        animation-name: defilement;
+        column-count: 10;
+        column-rule: 1px solid black;
+
+        column-width: 119px;
+
+
     }
 
-    20%,
-    30%{
-        right: 256px;
+    .flecheStatut {
+        z-index: 1;
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        height: 40px;
+
+        animation-iteration-count: infinite;
+        animation-duration: 25s;
+        /*animation-timing-function: linear;*/
+        animation-timing-function: steps(5, end);
+        animation-name: animFleche;
     }
 
-    40%,
-    50%{
-        right: 520px;
+ @media only screen and (max-height: 80px) {
+    @keyframes defilement {
+        0%,
+        10% {
+            position: relative;
+            right: -9px;
+        }
+
+        20%,
+        30% {
+            right: 256px;
+        }
+
+        40%,
+        50% {
+            right: 520px;
+        }
+
+        60%,
+        70% {
+            right: 784px;
+        }
+
+        80%,
+        90% {
+            right: 1049px;
+        }
     }
 
-    60%,
-    70%{
-        right: 784px;
-    }
+    @keyframes animFleche {
 
-    80%,
-    90%{
-        right: 1049px;
+        from {
+            transform: translateX(6px);
+        }
+
+        96% {
+            transform: translateX(300px);
+        }
     }
 }
 
-@keyframes animFleche {
-
-    from{
-        transform: translateX(6px);
-    }
-
-    96%{
-        transform: translateX(300px);
-    }
-}
+ @media only screen and (min-height: 81px) {
+     .flecheStatut {
+         left: 1px;
+         display: none;
+     }
+ }

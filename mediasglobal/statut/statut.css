@@ -3,18 +3,6 @@ body{
 
 }
 
-.zoneStatut{
-    border: 2px solid black;
-    border-radius: 10px;
-    height: 60px;
-    width: 265px;
-
-    position: absolute;
-    background-color: white;
-    top: 1px;
-    left: 0px;
-}
-
 .titre {
 
     width:100%;
@@ -40,14 +28,25 @@ h3{
     justify-content: center;
 
 }
+.zoneStatut {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 265px;
 
-.message{
-    position: relative; bottom: 32px;
+    position: absolute;
+    background-color: white;
+    top: 1px;
+    left: 0px;
+}
+
+.message {
+    position: relative;
+    bottom: 32px;
     font-family: 'police_arial';
-    font-size:14px;
+    font-size: 14px;
 
-    width:250px;
-    height: 36px;
+    width: 250px;
+
 
     color: black;
 
@@ -55,4 +54,14 @@ h3{
     word-wrap: break-word;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+@media only screen and (max-height: 80px) {
+    .zoneStatut { height: 60px; }
+    .message{ height: 36px; }
+}
+
+@media only screen and (min-height: 81px) {
+    .zoneStatut { height: max-content; }
+    .message { margin-bottom: -28px; left: 9px;}
 }

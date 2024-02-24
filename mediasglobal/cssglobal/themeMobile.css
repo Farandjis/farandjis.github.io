@@ -113,14 +113,14 @@
     }
 
 
-    .HautCSS > .menu_haut {
+    .HautCSS > #menu_haut {
         position: relative;
         width: 770px;
         height: 80px;
     }
 
 
-    .HautCSS .statut_haut {
+    .HautCSS #statut_haut {
         position: absolute;
 
 

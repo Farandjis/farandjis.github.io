@@ -1,7 +1,7 @@
 /*Affichage sur mobile*/
 @media only screen and (max-width: 780px) {
 /*
-    .HautCSS .statut_haut {
+    .HautCSS #statut_haut {
         width: 269px;
         height: 65px;
         visibility: visible;
@@ -123,14 +123,14 @@
     }
 
 
-    .HautCSS > .menu_haut {
+    .HautCSS > #menu_haut {
         position: relative;
         width: 770px;
         height: 80px;
     }
 
 
-    .HautCSS .statut_haut {
+    .HautCSS #statut_haut {
         position: absolute;
         top: 79px;
 

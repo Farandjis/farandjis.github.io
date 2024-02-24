@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="mediasglobal/cssglobal/polices.css">
     <link rel="stylesheet" href="mediasglobal/statut/statut.css">
     <link rel="stylesheet" href="mediasglobal/statut/statutAnimation.css">
+    <script src="/mediasglobal/scripts/agrandir_MenuDuHaut_DerniereNouvelle.js"></script>
 
 </head>
 
 <!--position: absolute; top: -25px;-->
 <body>
 
-    <div class="zoneStatut">
+    <div class="zoneStatut" onclick="agrandir_MenuDuHaut_DerniereNouvelle()" onkeydown="if (event.key === 'Enter'){ agrandir_MenuDuHaut_DerniereNouvelle() }">
         <div class="titre">
             <h3>Dernière nouvelle</h3>
         </div>
