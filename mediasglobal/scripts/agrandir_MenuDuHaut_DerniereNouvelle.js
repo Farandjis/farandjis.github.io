@@ -1,4 +1,7 @@
 function agrandir_MenuDuHaut_DerniereNouvelle() {
+    let estUnMobile = false;
+     if (parent.innerWidth < 780){ estUnMobile = true; }
+
     // Accéder au document de la page parente
     let documentParent = parent.document;
     let iframeDerniereNouvelle = documentParent.getElementById("statut_haut");
@@ -32,12 +35,56 @@ function agrandir_MenuDuHaut_DerniereNouvelle() {
 
 
     let hautCSS = documentParent.getElementsByClassName("HautCSS").item(0);
+
+
     if (iframeDerniereNouvelle.getAttribute("style") == null && iframeMenuDuHaut.getAttribute("style") == null) {
-        iframeDerniereNouvelle.setAttribute("style", "height: " + (80 + nbDeBoutonDuMenuHaut*53) + "px;");
-        iframeDerniereNouvelle.setAttribute("class", "iframeMenuGrand");
-        iframeMenuDuHaut.setAttribute("style", "height: " + (80 + nbDeBoutonDuMenuHaut*53) + "px;");
+        iframeDerniereNouvelle.setAttribute("style", "height: " + /*(80 + nbDeBoutonDuMenuHaut*53)*/ (10000000) + "px;");
+        let tailleHauteurBoiteDerniereNouvelle = iframeDerniereNouvelle.contentDocument.getElementsByClassName("message").item(0).clientHeight
+        let nbTotalLignes = Math.max(2, Math.round(tailleHauteurBoiteDerniereNouvelle / 15));
+        //alert(tailleHauteurBoiteDerniereNouvelle)
+
+
+        let tailleHauteurIframeChoisit = 0;
+        let tailleHauteurIframeDerniereNouvelle = (tailleHauteurBoiteDerniereNouvelle + 47 );
+        let tailleHauteurIframeMenuHaut = (80 + nbDeBoutonDuMenuHaut*53);
+        if(estUnMobile == false && false) {
+            if (tailleHauteurIframeDerniereNouvelle > tailleHauteurIframeMenuHaut) {
+                tailleHauteurIframeMenuHaut = tailleHauteurIframeDerniereNouvelle;
+            }
+            else {
+                tailleHauteurIframeDerniereNouvelle = tailleHauteurIframeMenuHaut;
+            }
+        }
+
+
+        iframeDerniereNouvelle.setAttribute("style", "height: " + tailleHauteurIframeDerniereNouvelle + "px;");
+
         iframeMenuDuHaut.setAttribute("class", "iframeMenuGrand");
-        hautCSS.setAttribute("style", "margin-top: " + (1 + nbDeBoutonDuMenuHaut*26) + "px;");
+        iframeDerniereNouvelle.setAttribute("class", "iframeDNGrand");
+
+        if (estUnMobile == true) {
+            // iframeMenuDuHaut.setAttribute("style", "height: " + (tailleHauteurIframeChoisit + tailleHauteurIframeDerniereNouvelle - 145) + "px;position: relative; top: " + (tailleHauteurIframeDerniereNouvelle - 80) + "px;");
+            iframeMenuDuHaut.setAttribute("style", "height: " + tailleHauteurIframeMenuHaut + "px;");
+        } else {
+            iframeMenuDuHaut.setAttribute("style", "height: " + tailleHauteurIframeMenuHaut + "px;");
+        }
+
+
+        let decalagePourDerniereNouvelle = 0;
+        let decalagePourMenuHaut = (nbDeBoutonDuMenuHaut*26);
+        let decalageChoisit = 0;
+        if (nbTotalLignes > 2) { decalagePourDerniereNouvelle = (6 + (Math.max(0, nbTotalLignes - 3) * 7.6)); }
+
+        if (decalagePourDerniereNouvelle > decalagePourMenuHaut || true) { decalageChoisit = decalagePourDerniereNouvelle;}
+        else  { decalageChoisit = decalagePourMenuHaut;}
+
+
+
+        if (estUnMobile == true && false) {
+            hautCSS.setAttribute("style", "margin-top: " + (decalageChoisit + decalagePourDerniereNouvelle - 31) + "px;");
+        } else {
+            hautCSS.setAttribute("style", "margin-top: " + (decalageChoisit) + "px;");
+        }
         hautCSS.setAttribute("id", "hautCSSMenuGrand");
     }
     else if (iframeDerniereNouvelle.getAttribute("style") != null && iframeMenuDuHaut.getAttribute("style") != null) {

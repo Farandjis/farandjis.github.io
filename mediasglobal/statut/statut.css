@@ -37,6 +37,8 @@ h3{
     background-color: white;
     top: 1px;
     left: 0px;
+
+    cursor: pointer;
 }
 
 .message {

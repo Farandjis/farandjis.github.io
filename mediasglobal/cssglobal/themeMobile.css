@@ -1,4 +1,69 @@
 /*Affichage sur mobile*/
+
+@media only screen and (max-width: 560px) {
+    .fondMenuSticky{
+        height: 80px;
+    }
+    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
+    .HautCSS {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 40px;
+        left: 49.7%;
+        transform: translate(-50%, -50%);
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgba(252, 138, 1, 0.5);
+
+        width:101%;
+    }
+
+    iframe{
+        border: none;
+    }
+
+
+    .HautCSS > #menu_haut:not(.iframeMenuGrand) {
+        position: relative;
+        width: 770px;
+        height: 80px;
+    }
+
+
+    .HautCSS > #statut_haut:not(.iframeDNGrand) {
+        position: absolute;
+
+
+        width: 269px;
+        height: 80px;
+        margin-left: 50px;
+        top: 7px;
+
+        visibility: visible;
+
+    }
+
+    .iframeDNGrand{
+        position: relative;
+        left: 16px;
+    }
+
+    #hautCSSMenuGrand{
+        display: grid;
+        justify-content: start;
+        top: -9px;
+    }
+
+    #hautCSSMenuGrand #menu_haut{
+        position: relative;
+        width: 100%;
+        margin-top: 395px;
+    }
+
+
+}
+
 @media only screen and (max-width: 780px) {
 
     #contenuPage{
@@ -32,15 +97,7 @@
     }
 
 
-    .fondMenuSticky{
-        height: 80px;
-        /*
-        background-color: #fc8a01;
-        border-radius: 0px 0px 10px 10px;
-        opacity: 0.5;
 
-         */
-    }
 
     .blocFondPage1{
         position: absolute;
@@ -93,45 +150,7 @@
         clip-path: polygon(0 35%, 100% 58%, 100% 100%, 0% 100%);
     }
 
-    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
-    .HautCSS {
-        display: flex;
-        justify-content: center;
 
-        position: absolute;
-        top: 40px;
-        left: 49.7%;
-        transform: translate(-50%, -50%);
-        border-radius: 0px 0px 10px 10px;
-        background-color: rgba(252, 138, 1, 0.5);
-
-        width:101%;
-    }
-
-    iframe{
-        border: none;
-    }
-
-
-    .HautCSS > #menu_haut {
-        position: relative;
-        width: 770px;
-        height: 80px;
-    }
-
-
-    .HautCSS #statut_haut {
-        position: absolute;
-
-
-        width: 269px;
-        height: 80px;
-        margin-left: 50px;
-        top: 7px;
-
-        visibility: visible;
-
-    }
 
     .titrePage{
         z-index: 1;

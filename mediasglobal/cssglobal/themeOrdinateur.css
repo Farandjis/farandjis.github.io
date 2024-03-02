@@ -5,9 +5,64 @@
     }
 
     #hautCSSMenuGrand{
-        margin-top: 0 !important; /* !important en CSS donne une priorité élevée à une règle, annulant les règles concurrentes. */
+        /*margin-top: 0 !important;*/ /* !important en CSS donne une priorité élevée à une règle, annulant les règles concurrentes. */
+
     }
 
+}
+
+/*
+@media only screen and (min-width: 780px) and (max-width: 1064px) {
+    #hautCSSMenuGrand{
+        top: 130px;
+    }
+}
+*/
+
+@media only screen and (min-width: 560px) {
+    .fondMenuSticky{
+
+        height: 80px;
+    }
+
+    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
+    .HautCSS {
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        top: 40px;
+        left: 49.7%;
+        transform: translate(-50%, -50%);
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgba(252, 138, 1, 0.5);
+
+        width:100.5%;
+    }
+
+    #hautCSSMenuHaut{
+        position: absolute;
+        margin-top: 2px;
+    }
+
+    iframe{
+        border: none;
+    }
+
+    .HautCSS > #menu_haut {
+        position: relative;
+
+        width: 1068px;
+        height: 80px;
+    }
+
+    .HautCSS > #statut_haut {
+        position: relative;
+        top: 7px;
+        right: 1px;
+        width: 269px;
+        height: 70px;
+    }
 }
 
 @media only screen and (min-width: 780px) {
@@ -44,15 +99,7 @@
     }
 
 
-    .fondMenuSticky{
 
-        height: 80px;
-        /*
-        background-color: #fc8a01;
-        border-radius: 0px 0px 10px 10px;
-        opacity: 0.5;
-        */
-    }
 
     .blocFondPage1{
         position: absolute;
@@ -105,44 +152,7 @@
         clip-path: polygon(0 35%, 100% 67%, 100% 100%, 0% 100%);
     }
 
-    /* Morceau qui contient le menu, et l'encart des dernières nouvelles.*/
-    .HautCSS {
-        display: flex;
-        justify-content: center;
 
-        position: absolute;
-        top: 40px;
-        left: 49.7%;
-        transform: translate(-50%, -50%);
-        border-radius: 0px 0px 10px 10px;
-        background-color: rgba(252, 138, 1, 0.5);
-
-        width:100.5%;
-    }
-
-    #hautCSSMenuHaut{
-        position: absolute;
-        margin-top: 2px;
-    }
-
-    iframe{
-        border: none;
-    }
-
-    .HautCSS > #menu_haut {
-        position: relative;
-
-        width: 1068px;
-        height: 80px;
-    }
-
-    .HautCSS > #statut_haut {
-        position: relative;
-        top: 7px;
-        right: 1px;
-        width: 269px;
-        height: 70px;
-    }
 
 
     .titrePage{
