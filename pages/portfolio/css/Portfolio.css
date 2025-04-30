@@ -121,7 +121,7 @@
 
     .triangle {
         border-style: solid;
-        border-color: transparent transparent #dc0000 transparent; /* transparence */
+        border-color: transparent transparent #B66E2D transparent; /* transparence */
         border-width: 0 25px 30px 0;
         background: none; /* suppression de l'arrière plan */
         width: 180px;
@@ -162,7 +162,7 @@
         width: 252px;
         height: 140px;
         margin-bottom: -5px;
-        border: 4px #dc0000 solid;
+        border: 4px #B66E2D solid;
     }
 
     .unProjet > a:not(hover) h2 {
@@ -192,7 +192,7 @@
         color: white;
         font-size: 20px;
 
-        background-color: #dc0000;
+        background-color: #B66E2D;
         width: 175px;
         height: 25px;
     }
@@ -204,7 +204,7 @@
 
 
     a:hover .rectangle {
-        background: blue;
+        background: #B66E2D;
     }
 
     a:hover h2 {
@@ -212,14 +212,14 @@
     }
 
     a:hover .triangle {
-        border-color: transparent transparent darkblue transparent; /* transparence */
+        border-color: transparent transparent #7E4D21 transparent; /* transparence */
     }
 
     a:hover img {
-        border: 4px darkblue solid;
+        border: 4px #7E4D21 solid;
     }
 
     a:hover p{
-        background-color: darkblue;
+        background-color: #7E4D21;
     }
 }
