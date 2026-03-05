@@ -21,18 +21,28 @@
 
     .FormationNom{
 
-        bottom: 170px;
+        bottom: 350px;
         left: 120px;
-        width: 133px;
+        max-width: 200px;
     }
 
     .FormationDuree{
-        bottom: 195px;
-        left: 260px;
+        font-style: italic;
+        font-weight: bold;
+
+        bottom: 365px;
+        left: 120px;
+    }
+
+    .FormationTexte{
+
+        top: -350px;
+        width: 220px;
+
     }
 
     #SectionCompetences{
-        bottom: 195px;
+        bottom: 395px;
         margin-left: 10px;
     }
 

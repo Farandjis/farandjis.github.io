@@ -1,67 +1,26 @@
-
-#fondPresentation {
-
-    background-image: url("img/fond/fonduBlanc2.webp"), url("img/fond/banniere.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%, cover;
-}
-
-#fondFormation {
-
-    background-image: url("img/fond/fonduBlanca.webp"), url("img/fond/velizyiut.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 100%, cover;
+/* 1. La classe principale */
+.fond {
     position: relative;
+    z-index: 1;
 }
 
-#fondCompetences {
+/* 2. Le calque avec tous les effets */
+.fond::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
 
-    background-image: url("img/fond/fonduBlanca.webp"), url("img/fond/programmation.webp");
+    /* C'est ici qu'est la magie : on appelle la variable CSS ! */
+    background-image: url("img/fond/fonduBlanca.webp"),var(--image-de-fond);
     background-repeat: no-repeat;
     background-size: 100% 100%, cover;
-    position: relative;
-}
 
-#fondLeSite {
-}
+    /* Tes effets partagés */
+    filter: blur(4px);
+    opacity: 0.065;
 
-@media only screen and (min-width: 781px) {
-    body {
-        background-color: #fc8a01;
-    }
-
-    #fondPresentation {
-    }
-
-    #fondFormation {
-
-
-    }
-
-    #fondCompetences {
-
-    }
-
-    #fondLeSite {
-
-
-    }
-}
-
-@media only screen and (max-width: 781px) {
-    body {
-        background-color: #fc8a01;
-    }
-
-    #fondPresentation {
-    }
-
-    #fondFormation {
-    }
-
-    #fondCompetences {
-    }
-
-    #fondLeSite {
-    }
+    /* Le masque */
+    -webkit-mask-image: -webkit-linear-gradient(transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(transparent 0%, black 15%, black 85%, transparent 100%);
 }
