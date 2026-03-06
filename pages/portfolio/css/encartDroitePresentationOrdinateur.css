@@ -21,7 +21,8 @@
     }
 
     #blocPresentationDuProjet h2 {
-        font-family: 'police_urbanjungle', serif;
+        font-family: 'police_thenextfont', serif;
+        font-size: 22px;
         letter-spacing : 2px;
         color: white;
         background-color: black;
