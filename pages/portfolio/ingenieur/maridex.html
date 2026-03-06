@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : MariDex (Pokédex IMAC)</title>
+        <meta name="description" content="Un Pokédex interactif créé en HTML/CSS/JS natif utilisant la PokéAPI.">
+        <meta name="keywords" content="MariDex, Pokémon, PokéAPI, IMAC, ESIEE Paris, JavaScript natif, Matthieu FARANDJIS, Développement Web">
+        <meta name="author" content="Matthieu FARANDJIS">
+        <link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe id="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe id="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">MariDex</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>MariDex</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="maridex/miniature.jpg" alt="Miniature projet">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                        <p>Terminé (Note : 17/20)</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/royaume-uni.webp" alt="Anglais">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>02/12/2025</p>
+                        </div>
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Date de rendu :</h4>
+                            <p>21/12/2025</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Langages</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>t</span> HTML5</p>
+                            <p><span>u</span> CSS3</p>
+                            <p><span>p</span> JavaScript</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Chloé CHABAUD</p>
+                            <p>Matthieu FARANDJIS</p>
+                            <p>Raphael CADETE</p>
+
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a class="boutonPlusDInfo" href="https://github.com/Raphi04/IMAC_ProjetS1_Groupe" target="_blank">Dépôt GitHub</a><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+                        <p>
+                            Réalisé dans le cadre du cours de programmation web d'Alaric ROUGNON-GLASSON,
+                            <strong>MariDex</strong> est un Pokédex interactif regroupant des informations sur plus de 1000 Pokémon.<br>
+                            Le nom du projet est un mot-valise combinant le nom du Pokémon <strong>Marisson</strong>, notre mascotte, et le terme <strong>Pokédex</strong>.
+                            Bien que Moustillon et Gromago aient été envisagés, Marisson s'est imposé par ses couleurs qui ont dicté la charte graphique du site.
+                        </p>
+
+                        <h3>Défis Techniques : Le "Zéro Framework"</h3>
+                        <p>
+                            La contrainte principale était l'interdiction d'utiliser des bibliothèques ou frameworks (React, Vue, etc.).<br>
+                            Cela nous a permis de nous concentrer sur la bonne réalisation artistique du site et sur l'efficacité dans la représentation des informations affichées.<br>
+                            <br>
+                            Une autre contrainte, qui est personnelle, est justement cet aspect artistique.<br>
+                            Grâce à l'aide de mon camarade Raphaël et de nos cours, j'ai pu apprendre comment construire un site web joli avec peu d'éléments CSS, le tout sans template !<br>
+                            C'est aussi l'occasion de commencer à utiliser sérieusement Figma.<br>
+                            <br>
+                            En effet, lors de mes trois années de BUT, la contrainte principale était de créer un site web fonctionnel et accessible. Il n'y avait pas de notion de "beauté" dans mes anciens projets : nous étions libres sur ce critère.<br>
+                        </p>
+
+                        <h3>Apprentissage et Collaboration</h3>
+                        <p>
+                            Le projet a été un terrain d'apprentissage majeur pour l'équipe :
+                        </p>
+                        <ul>
+                            <li><p><strong>Gestion de projet :</strong> Utilisation de Git avec une branche par fonctionnalité et une séparation stricte entre les branches <i>Main</i> et <i>Dev</i>.</p></li>
+                            <li><p><strong>Programmation :</strong> Manipulation du DOM via <code>createElement()</code> et <code>appendChild()</code> pour injecter dynamiquement les données de l'API.</p></li>
+                            <li><p><strong>Accessibilité :</strong> Nous avons vérifié le site via les validateurs HTML et CSS du W3C. Nous avons aussi utilisé l'extension Chrome WAVE. Il reste cependant des améliorations à faire pour la navigation au clavier.</p></li>
+                        </ul>
+
+                        <h3>Bilan et Retours</h3>
+                        <p>
+                            Avec une note finale de <strong>17/20</strong>, le projet a été salué pour sa responsivité et la clarté du rapport.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                    <div class="plusDImage">
+                        <a href="maridex/miniature.jpg" target="_blank"><img src="maridex/miniature.jpg" alt="Miniature projet"></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
