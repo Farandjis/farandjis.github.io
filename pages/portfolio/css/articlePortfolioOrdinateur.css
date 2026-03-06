@@ -23,7 +23,7 @@
     }
 
     .encartArticle > h1{
-        font-family: police_urbandefender;
+        font-family: 'police_thenextfont', serif;
         letter-spacing : 2px;
     }
 
@@ -87,7 +87,7 @@
 
 
     #titrePlusDImage{
-        font-family: police_urbandefender;
+        font-family: 'police_thenextfont', serif;
         letter-spacing : 2px;
         margin-bottom: 0;
     }
