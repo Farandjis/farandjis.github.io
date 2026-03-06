@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Projet : Bot Discord ANTIOPE</title>
+        <meta name="description" content="Un bot Discord en Python qui retransmet le programme TV de la TNT chaque soir.">
+        <meta name="keywords" content="Antiope, Bot Discord, Python, Programme TV, XMLTV, Développement, ESIEE, Nix">
+        <meta name="author" content="Matthieu FARANDJIS"><link rel="icon" href="../../../mediasglobal/icone_site.png">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+        <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+        <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+        <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+        <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+    </head>
+    <body id="bodyPage">
+        <div id="couleurFondPage">
+
+            <div class="blocFondPage1"></div>
+            <nav>
+                <div class="fondMenuSticky"></div>
+                <!--MENU-->
+                <div class="HautCSS">
+                    <iframe id="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+                    <div class="ouvrir"></div>
+                    <iframe id="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+                    <div class="refermer"></div>
+                </div>
+            </nav>
+
+            <header>
+                <h1 class="titrePage">Bot Discord ANTIOPE</h1>
+            </header>
+
+            <!-- ========= Page ========= -->
+
+
+            <!-- ==================== Bloc de présentation du projet -->
+            <div id="fondPresentationDuProjet"></div>
+            <div id="positionnementPresentationDuProjet">
+                <div id="blocPresentationDuProjet">
+
+                    <!-- Nom du projet -->
+                    <h2>ANTIOPE</h2>
+
+                    <!-- Miniature du projet -->
+                    <img src="antiope/bot%20en%20fonctionnement.png" alt="Aperçu du programme TV envoyé par Antiopee">
+
+                    <!-- Etat du projet (en cours, terminé...)-->
+                    <div id="etatDuProjet">
+                        <img src="../../../mediasglobal/img/etat/encours.webp" alt="Icone représentant l'état du projet">
+                        <p>En production</p>
+                    </div>
+
+                    <hr>
+
+                    <!-- Langues du projet-->
+                    <div id="langues">
+                        <h4 class="presentationADroite">Langue :</h4>
+                        <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+                    </div>
+
+                    <!-- Date de début et de fin du projet -->
+                    <div id="debutFinProjet">
+                        <div class="dateProjet">
+                            <h4 class="presentationADroite">Début du projet :</h4>
+                            <p>07/10/2025</p>
+                        </div>
+                    </div>
+
+                    <!-- Langages utilisés -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Stacks</h4>
+                        <div class="CategoriePresentationliste">
+                            <p><span>R</span> Python (Nextcord/Discord.py)</p>
+                            <p>XML (Parsing via XMLTV)</p>
+                            <p>Proxmox</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipe derrière le projet -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Equipe</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <p>Matthieu FARANDJIS</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <!-- Plus -->
+                    <div class="CategoriePresentationProjet">
+                        <h4 class="presentationADroite">Plus sur le projet</h4>
+                        <div class="CategoriePresentationliste" style="text-align: center;">
+                            <a>Ce projet n'est pas disponible en téléchargement.</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h1>Présentation</h1>
+                        <p>
+                            Le projet <strong>ANTIOPE</strong> est né de la volonté de simplifier l'accès au programme télévisé quotidien directement depuis Discord.
+                            Le nom est un hommage au standard français de télétexte utilisé à l'époque de l'analogique pour diffuser des informations, dont le programme TV, sur l'écran des téléspectateurs.
+                        </p>
+
+                        <h3>Idée</h3>
+                        <p>
+                            Je trouve que la télévision est un moyen formidable ! Du contenu varié, des moments en famille, des films cultes ou encore récents, et le tout gratuitement !<br>
+                            Je n'ai pas l'habitude de lire les programmes TV... Alors j'ignore ce qu'il se passe, et j'apprends souvent ce qui est ou sera diffusé via Twitter.<br>
+                            <br>
+                            C'est pour cela que j'ai créé ce bot : je profite de mon utilisation quotidienne et naturelle de Discord pour me faciliter l'accès au programme TV.<br>
+                            Dans l'idéal, le bot pourrait même me prévenir de la diffusion de programmes en particulier, en temps réel, et repérer les futurs programmes qui pourraient m'intéresser.
+                        </p>
+
+                        <h3>Fonctionnement Technique</h3>
+                        <p>
+                            Le bot est développé en <strong>Python</strong>. Il récupère chaque jour les données des chaînes de la TNT via un fichier XML disponible librement en ligne (source : xmltvfr.fr).
+                            L'algorithme analyse ce fichier pour extraire les programmes de la soirée (prime-time) et les met en forme avec les logos des chaînes respectives sous forme d'emotes Discord.
+                        </p>
+
+                        <h3>Défis et Évolutions</h3>
+                        <p>
+                            L'un des principaux défis a été la gestion de la pertinence des programmes affichés. Il a fallu arbitrer entre la durée des programmes (ex: épisodes courts comme <i>Malcolm</i> vs films) pour éviter de surcharger le canal tout en restant exhaustif.
+                            <br><br>
+                            Côté déploiement, le bot est hébergé sur un serveur Linux via des conteneurs <strong>Proxmox (LXC)</strong>, nécessitant une configuration rigoureuse (requirements.txt, gestion des fuseaux horaires via <code>timedatectl</code>).
+                        </p>
+
+                        <h3>Futur du Bot</h3>
+                        <p>
+                            Une <strong>v2</strong> est déjà envisagée avec l'intégration d'une base de données.
+                            Celle-ci permettrait un système d'abonnement personnalisé : les utilisateurs pourraient s'abonner à des mots-clés ou des programmes spécifiques pour recevoir une notification dès leur diffusion en message privé.
+                        </p>
+
+                        <h3>Liens</h3>
+                        <p>
+                            <a class="boutonPlusDInfo" href="https://xmltvfr.fr/xmltv.php" target="_blank">XML TV</a><br>
+                            <a class="boutonPlusDInfo" href="https://fr.wikipedia.org/wiki/Antiope_(t%C3%A9l%C3%A9texte)" target="_blank">Wikipédia : Ce qu'était Antiope à l'époque</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenuPage">
+
+                <div class="contenuPageReadapter">
+                    <h1 id="titrePlusDImage">D'autres images</h1>
+
+                        <div class="plusDImage">
+                            <a href="antiope/bot%20en%20fonctionnement.png" target="_blank"><img src="antiope/bot%20en%20fonctionnement.png" alt="Programme TV du soir sur Discord"></a>
+                            <a href="antiope/emotes%20discord%20utilises%20pour%20le%20bot.png" target="_blank"><img src="antiope/emotes%20discord%20utilises%20pour%20le%20bot.png" alt="Liste des emotes de chaînes TV"></a>
+                            <a href="antiope/reflexion%20sur%20le%20rendu%20du%20bot.png" target="_blank"><img src="antiope/reflexion%20sur%20le%20rendu%20du%20bot.png" alt="Tests de mise en page et logs"></a>
+
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="contenuPage">
+                <div class="contenuPageReadapter">
+
+                    <div class="encartArticle">
+                        <h3>A propos de cet article</h3>
+                        <p>
+                            Cet article a été coécrit avec l'aide de Gemini à partir de présentations du projet déjà faites (sur LinkedIn, en message privé à des amis...).<br>
+                            J'ai relu attentivement et adapté ce qu'a généré Gemini. Certains passages sont écrits directement par moi.<br>
+                            Gemini m'a permis de gagner du temps.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========= footer ========= -->
+            <div id="positionFooterPourMobile">
+                <footer>
+                    <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+
+                </footer>
+
+                <div class="blocFondPage2b"></div>
+            </div>
+
+        </div>
+    </body>
+</html>
