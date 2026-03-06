@@ -1,0 +1,132 @@
+/* =========================================================
+   Fichier : accueilProjetsEncarts.css
+   Utilité : Styles des mini-encarts (Basé sur Portfolio.css)
+   ========================================================= */
+
+.conteneurMiniProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* Le cadre principal (équivalent de ton .unProjet) */
+.mini-projet {
+    border: 4px #efefef solid;
+    width: 260px; /* Taille réduite */
+    box-shadow: 0 0 15px 3px black; /* Ton ombre d'origine */
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mini-projet:hover {
+    transform: scale(1.05); /* L'effet d'agrandissement */
+}
+
+.mini-projet > a {
+    display: block;
+    text-decoration: none;
+    position: relative; /* Bloque le positionnement des formes */
+}
+
+/* L'image avec ta bordure marron d'origine */
+.mini-projet > a > img {
+    width: 252px;
+    height: 140px;
+    border: 4px #B66E2D solid;
+    display: block;
+    margin: 0;
+}
+
+/* Le rectangle clair sous l'image */
+.mini-projet .rectangle {
+    width: 260px;
+    height: 45px;
+    background-color: #efefef;
+    transition: background-color 0.2s;
+}
+
+/* Ton triangle marron (exactement tes proportions, mais à gauche) */
+.mini-projet .triangle {
+    position: absolute;
+    bottom: 45px; /* S'appuie exactement au-dessus du rectangle */
+    left: 0;
+
+    border-style: solid;
+    border-color: transparent transparent #B66E2D transparent;
+    border-width: 0 20px 25px 0; /* Ton astuce de pente vers la droite */
+    background: none;
+    width: 140px;
+    height: 15px;
+    transition: border-color 0.2s;
+    z-index: 1;
+}
+
+/* Le Titre (dans le rectangle) */
+.mini-projet > a h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 45px; /* Centre dans le rectangle */
+    margin: 0;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+
+    font-family: 'police_thenextfont', serif;
+    font-size: 18px;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: color 0.2s;
+    z-index: 2;
+}
+
+/* Le bloc des langages (dans le triangle) */
+.mini-projet > a > p {
+    position: absolute;
+    bottom: 45px; /* <-- Modifié : collé pile au-dessus du rectangle du titre */
+    left: 4px;
+    width: 135px;
+    height: 25px; /* <-- Modifié : correspond à l'épaisseur de ton triangle marron */
+    margin: 0;
+    padding-left: 5px;
+
+    display: flex;
+    align-items: center; /* Permet de centrer parfaitement le texte au milieu des 25px */
+
+    color: white;
+    background-color: #B66E2D;
+    font-family: 'police_arial', sans-serif;
+    font-size: 13px;
+    transition: background-color 0.2s;
+    z-index: 2;
+}
+
+/* --- TON SYSTÈME DE CHANGEMENT DE COULEURS AU SURVOL --- */
+
+.mini-projet > a:hover .rectangle {
+    background-color: #B66E2D; /* Le fond devient marron */
+}
+
+.mini-projet > a:hover h2 {
+    color: white; /* Le titre devient blanc */
+}
+
+.mini-projet > a:hover .triangle {
+    border-color: transparent transparent #7E4D21 transparent; /* Marron foncé */
+}
+
+.mini-projet > a:hover img {
+    border-color: #7E4D21; /* Bordure image plus foncée */
+}
+
+.mini-projet > a:hover p {
+    background-color: #7E4D21; /* Fond texte plus foncé */
+}
