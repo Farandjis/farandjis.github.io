@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet : Pika Train (Synthèse d'Image)</title>
+    <meta name="description" content="Projet de Synthèse d'Image sur le thème de Pokémon, développé en C/C++ avec OpenGL.">
+    <meta name="keywords" content="Pika Train, Pokémon, IMAC, ESIEE Paris, Synthèse d'Image, C++, OpenGL, JSON, Matthieu FARANDJIS, Julien LEEDER">
+    <meta name="author" content="Matthieu FARANDJIS">
+    <link rel="icon" href="../../../mediasglobal/icone_site.png">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+    <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+    <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+    <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+    <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+</head>
+<body id="bodyPage">
+<div id="couleurFondPage">
+
+    <div class="blocFondPage1"></div>
+    <nav>
+        <div class="fondMenuSticky"></div>
+        <div class="HautCSS">
+            <iframe id="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+            <div class="ouvrir"></div>
+            <iframe id="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+            <div class="refermer"></div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="titrePage">Projet E3 IMAC</h1>
+    </header>
+
+    <div id="fondPresentationDuProjet"></div>
+    <div id="positionnementPresentationDuProjet">
+        <div id="blocPresentationDuProjet">
+
+            <h2>PikaStar</h2>
+
+            <img src="pikastar/img/miniature.jpg" alt="Miniature projet Pika Train">
+
+            <div id="etatDuProjet">
+                <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                <p>Terminé</p>
+            </div>
+
+            <hr>
+
+            <div id="langues">
+                <h4 class="presentationADroite">Langue :</h4>
+                <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+            </div>
+
+            <!-- Date de début et de fin du projet -->
+            <div id="debutFinProjet">
+                <div class="dateProjet">
+                    <h4 class="presentationADroite">Énoncé reçu le :</h4>
+                    <p>07/05/2026</p>
+                </div>
+                <div class="dateProjet">
+                    <h4 class="presentationADroite">Date de rendu :</h4>
+                    <p>08/06/2026</p>
+                </div>
+
+            </div>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Technologies</h4>
+                <div class="CategoriePresentationliste">
+                    <p>C++</p>
+                    <p>OpenGL</p>
+                    <p>Shaders (GLSL)</p>
+                    <p>JSON (nlohmann)</p>
+                </div>
+            </div>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Equipe</h4>
+                <div class="CategoriePresentationliste" style="text-align: center;">
+                    <p>Matthieu FARANDJIS</p>
+                    <p>Julien LEEDER</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Plus sur le projet</h4>
+                <div class="CategoriePresentationliste" style="text-align: center;">
+                    <a class="boutonPlusDInfo" href="https://github.com/Farandjis/imac1_PikaStar" target="_blank">Dépôt GitHub</a>
+                    <a class="boutonPlusDInfo" href="pikastar/theTrain.pdf" target="_blank">Énoncé</a>
+                    <a class="boutonPlusDInfo" href="pikastar/README.pdf" target="_blank">Rapport</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenuPage">
+        <div class="contenuPageReadapter">
+
+            <div class="encartArticle">
+                <h1>Présentation</h1>
+                <p>
+                    Ce projet dans le cadre du cours de Synthèse d'Images en E3 IMAC à l'ESIEE Paris. Le but initial du sujet, intitulé "A Railroad and a train", était de concevoir une petite simulation ferroviaire en C++ avec OpenGL.<br>
+                    Pour nous approprier le projet, nous avons décidé de partir sur le thème de Pokémon. Les rails et le train sont assortis à Pikachu, et notre gare est la reproduction de la gare de la ville d'Illumis des jeux Pokémon XY et Pokémon ZA.<br>
+                    PikaStar qui est la fusion du pokémon Pikachu et du train Eurostar.
+                </p>
+
+                <h3>Spécifications et Contraintes du Sujet</h3>
+                <p>
+                    Le cahier des charges de cette application 3D imposait plusieurs contraintes techniques rigoureuses :
+                </p>
+                <ul>
+                    <li><p><strong>Génération procédurale :</strong> <br>Le circuit doit être généré automatiquement à partir d'un fichier de configuration JSON lu grâce à la bibliothèque nlohmann.</p></li>
+                    <li><p><strong>Environnement :</strong>  <br>La scène repose sur un terrain plat modélisé sous forme de grille de taille minimale 10x10, représentant un espace d'au moins 100x100.</p></li>
+                    <li><p><strong>Modélisation stricte :</strong>  <br>Seuls deux types de rails devaient être modélisés : un rail droit composé de 5 ballasts et 2 rails, ainsi qu'un rail courbe de **90°** comprenant 2 rails courbés et 3 ballasts.</p></li>
+                    <li><p><strong>Éléments additionnels :</strong>  <br>L'application devait inclure la modélisation d'une gare et d'un train posé sur les rails.</p></li>
+                    <li><p><strong>Éclairage :</strong> <br> Le projet requiert deux modes d'illumination : un mode "flat" par défaut, et un mode "réaliste" intégrant une lumière directionnelle (soleil) et une source ponctuelle positionnée à l'avant du train.</p></li>
+                    <li><p><strong>Textures :</strong> <br> Au minimum un élément graphique de la scène devait être texturé.</p></li>
+                </ul>
+
+                <h3>Détails techniques et Commandes</h3>
+                <p>
+                    Contrairement aux travaux dirigés classiques, ce projet nécessitait l'implémentation d'une caméra de type FPS permettant à l'utilisateur de se déplacer librement et de regarder à **360°** dans le plan (x, y). Le programme a été développé sous Windows 11 et Ubuntu 24.04.4 LTS.
+                    <br><br>
+                    Voici quelques commandes pour interagir avec la scène :
+                </p>
+                <ul>
+                    <li><p><strong>Touches ZQSD :</strong> Permet de faire bouger la caméra (haut, gauche, bas, droite) en vue FPS.</p></li>
+                    <li><p><strong>Touche C :</strong> Permet de désactiver la caméra et de faire balader la souris dans la fenêtre.</p></li>
+                    <li><p><strong>Touche L / P :</strong> Affiche le mode maillage des objets (L) ou repasse les objets en forme pleine (P).</p></li>
+                    <li><p><strong>Touches K :</strong> Activer ou non les lumières (bascule entre flat shading et phong shading).</p></li>
+                    <li><p><strong>Touche T :</strong> Nous permet d'avoir un top shot de la scène (positionnement en vue du dessus).</p></li>
+                </ul>
+
+                <h3>Fonctionnalité : Construction du circuit (determinerMarcheASuivre)</h3>
+                <p>
+                    L'une des fonctionnalités phares que j'ai développées (Matthieu) est la fonction <code>determinerMarcheASuivre</code>, située dans le fichier <code>deserialisation.cpp</code>.<br>
+                    L'objectif était de construire le circuit ferroviaire à partir du fichier <code>circuit.json</code>, en interprétant les coordonnées pour placer les rails en 3D.<br>
+                    <br>
+                    Inspiré par Scratch, j'ai voulu créer une logique simple basée sur des commandes comme "avancer", "tourner à gauche" ou "tourner à droite".<br>
+                    Pour cela, l'algorithme compare la position du rail précédent et du rail suivant :
+                </p>
+                <ul>
+                    <li><p>Si la distance sur l'un des deux axes entre le rail précédent et le rail suivant est de 2, il s'agit d'un rail droit.</p></li>
+                    <li><p>Sinon, le rail est courbé. L'algorithme détermine s'il tourne à gauche ou à droite en comparant les coordonnées X et Y.</p></li>
+                </ul>
+                <p>
+                    Le principal défi était le changement de repère à chaque fois que le train tourne. Pour résoudre ce problème dans toutes les directions, j'ai conçu deux listes de repères et utilisé une opération modulo afin d'éviter les erreurs de type "out of range".
+                </p>
+
+                <h3>Modifications du code de base</h3>
+                <p>
+                    Pour accomplir ce projet, nous avons dû modifier le code initialement fourni par notre professeur :
+                </p>
+                <ul>
+                    <li><p>Dans <code>Projet/deserialisation.h</code> : Ajout de <code>vector&lt;Direction&gt; marcheASuivreCircuit</code>, de l'énumération <code>Direction</code>, et de la structure <code>PositionBis</code>.</p></li>
+                    <li><p>Dans <code>basic_mesh.hpp</code> : Ajout de la fonction <code>basicCubeMaisPourLaMosaique</code> pour pouvoir répéter les textures, et de <code>basicTriangle</code> pour générer des triangles en 3D.</p></li>
+                    <li><p>Nous avons également implémenté une fonction C++ capable de compléter automatiquement une case manquante dans le fichier JSON du circuit.</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenuPage">
+        <div class="contenuPageReadapter">
+            <h1 id="titrePlusDImage">D'autres images</h1>
+            <div class="plusDImage">
+                <a href="pikastar/img/miniature.jpg" target="_blank"><img src="pikastar/img/miniature.jpg" alt="Image du train et des rails"></a>
+                <a href="pikastar/img/gare_illumis_za.png" target="_blank"><img src="pikastar/img/gare_illumis_za.png" alt="Image de la gare d'Illumis Pokémon ZA"></a>
+                <a href="pikastar/img/gare_illumis_xy.png" target="_blank"><img src="pikastar/img/gare_illumis_xy.jpg" alt="Image de la gare d'Illumis Pokémon XY"></a>
+                <a href="pikastar/img/ardoise_precedent_suivant.jpg" target="_blank"><img src="pikastar/img/ardoise_precedent_suivant.jpg" alt="Explication de l'algorithme sur ardoise 1"></a>
+                <a href="pikastar/img/ardoise_distances.jpg" target="_blank"><img src="pikastar/img/ardoise_distances.jpg" alt="Explication des distances sur ardoise 2"></a>
+                <a href="pikastar/img/ardoise_circuit.jpg" target="_blank"><img src="pikastar/img/ardoise_circuit.jpg" alt="Résultat du parcours des rails dans la console"></a>
+                <a href="pikastar/img/Rail_Train.jpg" target="_blank"><img src="pikastar/img/Rail_Train.jpg" alt="avec les shaders"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="positionFooterPourMobile">
+        <footer>
+            <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+        </footer>
+
+        <div class="blocFondPage2b"></div>
+    </div>
+
+</div>
+</body>
+</html>
