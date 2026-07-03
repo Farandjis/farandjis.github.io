@@ -11,12 +11,17 @@
 
         position: absolute;
         top: 40px;
-        left: 49.7%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        border-radius: 0px 0px 10px 10px;
+
         background-color: rgba(252, 138, 1, 0.5);
 
         width:101%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
     }
 
     iframe{
