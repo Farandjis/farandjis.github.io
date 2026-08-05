@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet : PokéMoche (Workshop Architecture Logicielle Web)</title>
+    <meta name="description" content="PokéMoche est un projet étudiant de création d'une application web dynamique avec Flask et SQLite, basé sur une architecture MVC et une API REST.">
+    <meta name="keywords" content="PokéMoche, Flask, Python, SQLite, MVC, API REST, ESIEE Paris, IMAC, Matthieu FARANDJIS, Architecture Logicielle">
+    <meta name="author" content="Matthieu FARANDJIS">
+    <link rel="icon" href="../../../mediasglobal/icone_site.png">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeOrdinateur.css">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/themeMobile.css">
+    <link rel="stylesheet" href="../../../mediasglobal/statut/statutApparitionMobile.css">
+    <link rel="stylesheet" href="../../../mediasglobal/cssglobal/polices.css">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/encartDroitePresentationOrdinateur.css">
+    <link rel="stylesheet" href="../css/encartDroitePresentationMobile.css">
+    <link rel="stylesheet" href="../css/articlePortfolioOrdinateur.css">
+    <link rel="stylesheet" href="../css/articlePortfolioMobile.css">
+</head>
+<body id="bodyPage">
+<div id="couleurFondPage">
+
+    <div class="blocFondPage1"></div>
+    <nav>
+        <div class="fondMenuSticky"></div>
+        <div class="HautCSS">
+            <iframe id="menu_haut" src="../../../mediasglobal/menu/menuHaut.html" title="Menu pour accéder aux diverses pages. Disponible directement sur la page d'accueil"></iframe>
+
+            <div class="ouvrir"></div>
+            <iframe id="statut_haut" src="../../../statut.html" title="Informations récentes concernant Matthieu FARANDJIS"></iframe>
+            <div class="refermer"></div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="titrePage">Projet E3 IMAC</h1>
+    </header>
+
+    <div id="fondPresentationDuProjet"></div>
+    <div id="positionnementPresentationDuProjet">
+        <div id="blocPresentationDuProjet">
+
+            <h2>PokéMoche</h2>
+
+            <img src="image.jpg" alt="Aperçu du MCD de PokéMoche" style="border-radius: 8px;">
+
+            <div id="etatDuProjet">
+                <img src="../../../mediasglobal/img/etat/terminer.webp" alt="Icone représentant l'état du projet">
+                <p>Terminé</p>
+            </div>
+
+            <hr>
+
+            <div id="langues">
+                <h4 class="presentationADroite">Langue :</h4>
+                <img src="../../../mediasglobal/img/drapeaux/france.webp" alt="Français">
+            </div>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Technologies</h4>
+                <div class="CategoriePresentationliste">
+                    <p>Python (Flask)</p>
+                    <p>SQLite</p>
+                    <p>JavaScript / JSON</p>
+                    <p>HTML / CSS</p>
+                </div>
+            </div>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Équipe</h4>
+                <div class="CategoriePresentationliste" style="text-align: center;">
+                    <p>Matthieu FARANDJIS</p>
+                    <p>Alexandre GROSDIDIER</p>
+                    <p>Laïn KOWALIK</p>
+                </div>
+            </div>
+
+            <div class="CategoriePresentationProjet">
+                <h4 class="presentationADroite">Voir le projet</h4>
+                <div class="CategoriePresentationliste" style="text-align: center;">
+                    <a class="boutonPlusDInfo" href="https://github.com/Farandjis/imac1_ws_archi_logicielle" target="_blank">Dépôt GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenuPage">
+        <div class="contenuPageReadapter">
+
+            <div class="encartArticle">
+                <h1>Présentation et Contexte</h1>
+                <p>
+                    Ce projet a été réalisé dans le cadre du Workshop "Architecture logicielle Web" en E3 IMAC. L'objectif principal de ce module était de construire un site web dynamique centré sur le développement Back-end, en utilisant le framework Python Flask et un moteur de base de données (SQLite).
+                    <br><br>
+                    Le cahier des charges initial proposait de créer une application pour adopter des animaux au physique difficile ("Krikri d'amour"). Notre équipe a choisi d'adapter ce sujet pour concevoir <strong>PokéMoche</strong> : un répertoire interactif de Pokémon considérés comme moches.
+                </p>
+            </div>
+
+            <div class="encartArticle">
+                <h1>L'Application PokéMoche</h1>
+                <p>
+                    L'application s'articule autour d'une architecture MVC (Modèle-Vue-Contrôleur) avec une communication Front/Back assurée par une API REST via des requêtes JavaScript (fetch) échangeant des données au format JSON.
+                    Voici les principales fonctionnalités implémentées :
+                </p>
+                <ul>
+                    <li><p><strong>Système de comptes :</strong> Inscription, connexion et déconnexion des utilisateurs.</p></li>
+                    <li><p><strong>Gestion des PokéMoches (CRUD) :</strong> Les utilisateurs peuvent consulter la liste des Pokémon, en ajouter de nouveaux, modifier leurs informations ou les supprimer.</p></li>
+                    <li><p><strong>Interactions :</strong> Possibilité de laisser des commentaires sur la fiche d'un Pokémon et de les supprimer.</p></li>
+                </ul>
+                <p>
+                    Nous avons également mis en place une gestion intelligente de la base de données : le fichier <code>database.py</code> détecte la branche Git active et crée un environnement de base de données isolé pour chaque développeur, évitant ainsi les conflits lors de la phase de développement.
+                </p>
+            </div>
+
+            <div class="encartArticle">
+                <h1>L'Audit IA et les Défis Techniques</h1>
+                <p>
+                    La phase finale du workshop exigeait de soumettre notre version fonctionnelle (V1) à des Intelligences Artificielles pour obtenir une revue de code professionnelle et appliquer des améliorations pour la version finale (V2).
+                </p>
+                <p>
+                    Nous avons utilisé <strong>Copilot</strong> et <strong>Gemini</strong>. Copilot a fourni un audit très détaillé et sévère, soulevant notamment des points critiques sur notre sécurité : mots de passe hachés en SHA-256 sans sel, clé secrète Flask codée en dur, et un manque de vérification des autorisations sur certaines routes REST. Nous avons écouté l'IA pour renforcer la validation des données et la gestion des erreurs.
+                </p>
+                <p>
+                    Gemini voulait manipuler les images du niveau du JavaScript ce qui nous a surpris, nous lui avons deamndé de le faire au niveau du modèle, il a parfaitement compris et parfaitement généré le code. Il a également pris le soin de vérifier l'existence du fichier image au préalable avant d'effectuer une quelconque manipulation.
+                    <br>
+                    Nous sommes passés par Gemini en ligne (je ne pouvais lui transmettre que 10 fichiers (j'ai principalement partagé les codes pythons et le sujet du workshop)), il était détâcher de CLion.
+                </p>
+            </div>
+
+            <div class="encartArticle">
+                <h3>À propos de cet article</h3>
+                <p>
+                    <em>Dans une démarche de transparence, je précise que la rédaction et la structure HTML de cet article ont été générées avec l'aide de l'intelligence artificielle Gemini. À partir de mon rapport de projet, des consignes du workshop et des retours d'audit technique, l'IA m'a aidé à synthétiser les informations pour mon portfolio web. Tout le travail décrit (code, architecture, soutenance) a bien été réalisé par moi et mes camarades.</em>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="contenuPage">
+        <div class="contenuPageReadapter">
+            <h1 id="titrePlusDImage">Galerie du projet</h1>
+            <div class="plusDImage">
+                <a href="image.jpg" target="_blank"><img src="image.jpg" alt="Schéma Conceptuel de Données (MCD)"></a>
+                <!-- Espace réservé pour ajouter des captures d'écran du site PokéMoche -->
+            </div>
+        </div>
+    </div>
+
+    <div id="positionFooterPourMobile">
+        <footer>
+            <iframe src="../../../mediasglobal/bas/coordonneesBas.html" id="coordonnesBas" title="Quelques coordonnées de contacte. La page de contacte est plus complète."></iframe>
+        </footer>
+        <div class="blocFondPage2b"></div>
+    </div>
+
+</div>
+</body>
+</html>
