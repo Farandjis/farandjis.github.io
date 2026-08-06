@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- === Racine du site === -->
+    <url>
+        <loc>https://farandjis.github.io/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/contacte/</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/credits/</loc>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- === Projets : Ingénieur === -->
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/index.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/derniereMise.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/france5sonore.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/maridex.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/pikastar.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/pokemoche.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/ingenieur/traitAustereNumerique.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- === Projets : IUT === -->
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/index.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/appli_demande_depannage.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/diamant.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/ia_picsou.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/modo_discord_iut.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/paralix.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/projet_rpg.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/site_vente.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/iut/voyage_allemagne.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- === Projets : Lycée === -->
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/lycee/index.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/lycee/escape98.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/lycee/evariste2000.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/lycee/tetris.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/lycee/triforce.html</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- === Projets : Personnel === -->
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/index.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/antiope.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/editeur_pymon_rouge.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/monalbummusical.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/olympiapvp.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/pypixelart.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/siteweb.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/personnel/windoze.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- === Projets : Professionnel === -->
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/professionnel/index.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/professionnel/listprojectdoc.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://farandjis.github.io/pages/portfolio/professionnel/siteweb_laboratoire_david.html</loc>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>
